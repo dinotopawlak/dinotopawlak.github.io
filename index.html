@@ -1,17 +1,1253 @@
-<html>
+<!DOCTYPE html>
+<html style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
 
-<p>Hello</p>
+<head>
+
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+	<p id="myQuestion"></p>
+
+	
+	<label style="font-size:20px" for="name"> Hier das gewünschte Wort schreiben:</label>
+
+	<input type="text" style="height:23px;font-size:20px" id="Myinput">
+
+	<button type="button" style="height:40px;font-size:20px" id="Antwortbutton"
+		onclick="getInputValue()">Submit</button>
+	<br>
+	<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button> 
+
+	<script>
+
+		var tasks =
+			[
+				{
+					"answer": "Bolt",
+					"tip": "Blitz",
+					"question": "A ---- of lightning hit the house and the power went out."
+				},
+				{
+					"answer": "come true",
+					"tip": "wahr werden",
+					"question": "If you make a wish, it will ---- ----."
+				},
+				{
+					"answer": "cruel",
+					"tip": "grausam",
+					"question": "You shouldn't be so ---- to animals."
+				},
+				{
+					"answer": "detest",
+					"tip": "verabscheuen",
+					"question": "I ------ her older sister, she's really mean."
+				},
+				{
+					"answer": "Eastern",
+					"tip": "Ost-",
+					"question": "Much of ----- Europe is part of the European Union now."
+				},
+				{
+					"answer": "handsome",
+					"tip": "gutaussehend, attraktiv",
+					"question": "She dreamed of a tall, ----- man."
+				},
+				{
+					"answer": "lawyer",
+					"tip": "Anwalt, Anwältin",
+					"question": "Get a ------ to look after your interests."
+				},
+				{
+					"answer": "lightning",
+					"tip": "Blitz",
+					"question": "That storm yesterday was amazing. Did you see all the --------?"
+				},
+				{
+					"answer": "murderer",
+					"tip": "Mörder/in",
+					"question": "The ----- was sent to prison for 20 years."
+				},
+				{
+					"answer": "nowhere",
+					"tip": "nirgends",
+					"question": "In the film a T-Rex suddenly appears from -------. (not Italy)"
+				},
+				{
+					"answer": "prisoners",
+					"tip": "Gefangene/r",
+					"question": "The ------ went to go on a hunger strike."
+				},
+				{
+					"answer": "sadness",
+					"tip": "Traurigkeit",
+					"question": "Her ----- at her hamster's death was a bit too much. (not happiness.)"
+				},
+				{
+					"answer": "thief",
+					"tip": "Dieb/in",
+					"question": "You took my mobile, didn't you? You're a -----!"
+				},
+				{
+					"answer": "fiancee",
+					"tip": "Verlobte",
+					"question": "They're getting married in March. That's his ----- over there"
+				},
+				{
+					"answer": "flames",
+					"tip": "Flamme",
+					"question": "The ---- of the campfire werde high and bright."
+				},
+				{
+					"answer": "realise",
+					"tip": "erkennen",
+					"question": "They didn't --- the danger they were in."
+				},
+				{
+					"answer": "roared",
+					"tip": "Gebrüll",
+					"question": "When the lion was let out of its cage, it ----- loudly."
+				},
+				{
+					"answer": "stepped",
+					"tip": "treten",
+					"question": "I have to clean my shoes - I ---- in something on the way here."
+				},
+				{
+					"answer": "waves",
+					"tip": "Welle",
+					"question": "The ---- are really big today. Let's go out and surf."
+				},
+				{
+					"answer": "afford",
+					"tip": "sich leisten",
+					"question": "They can't --- a new car."
+				},
+				{
+					"answer": "amazed",
+					"tip": "erstaunt",
+					"question": "We were ---- to see dolphins swimming behind us."
+				},
+				{
+					"answer": "criminal",
+					"tip": "Verbrecher/in",
+					"question": "Don't believe a word he says. The man is a ---------. (not politician)"
+				},
+				{
+					"answer": "enemies",
+					"tip": "Feind/in",
+					"question": "Everyone likes her - she has no ----- in the world."
+				},
+				{
+					"answer": "familiar",
+					"tip": "vertraut",
+					"question": "I'm not ------ with that TV series."
+				},
+				{
+					"answer": "pipe",
+					"tip": "Pfeife",
+					"question": "Sherlock Holmes usually smokes his ------- when he's solving a case."
+				},
+				{
+					"answer": "clear-cut",
+					"tip": "deutlich, eindeutig",
+					"question": "I need some ------ rules in this house!"
+				},
+				{
+					"answer": "marry",
+					"tip": "heiraten",
+					"question": "He asked her to ----- him. How romantic! (not kill)"
+				},
+				{
+					"answer": "Murder",
+					"tip": "Mord",
+					"question": ".---- is the worst crime of all."
+				},
+				{
+					"answer": "threatened",
+					"tip": "bedrohen",
+					"question": "He pulled out a gun and ------- the shop owner with it. (not killed)"
+				},
+				{
+					"answer": "figure it out",
+					"tip": "herausfinden",
+					"question": "I simply don't know what to do. - Don't worry, we'll ----- ---- -- together"
+				},
+				{
+					"answer": "kindness",
+					"tip": "Freundlichkeit",
+					"question": "That's the Thomsons. They're known for their ---- towards strangers (not cruelty)."
+				},
+				{
+					"answer": "probable",
+					"tip": "wahrscheinlich",
+					"question": "It's very ----- that we won't go on holiday this year."
+				},
+				{
+					"answer": "detect",
+					"tip": "aufspüren, feststellen",
+					"question": "Do I ---- some irony in your voice?"
+				},
+				{
+					"answer": "for instance",
+					"tip": "beispielsweise",
+					"question": "In Italy, ---- ---, that day is not a holiday."
+				},
+				{
+					"answer": "popularity",
+					"tip": "Beliebtheit",
+					"question": "She thinks her ----- will get her far, but it's not all there is in life."
+				},
+				{
+					"answer": "laziness",
+					"tip": "Faulheit",
+					"question": "Garfield, the cartoon cat, is famous for his -------."
+				},
+				{
+					"answer": "preference",
+					"tip": "Vorliebe",
+					"question": "I have a ---- for spicy food. You?"
+				},
+				{
+					"answer": "preparation",
+					"tip": "Vorbereitung",
+					"question": "The producer controls the ---- of a film."
+				},
+				{
+					"answer": "rose",
+					"tip": "aufgehen",
+					"question": "The sun ----- above the houses"
+				},
+				{
+					"answer": "secretly",
+					"tip": "heimlich",
+					"question": "He didn't show it, but he was ---- in love with her."
+				},
+				{
+					"answer": "desperate",
+					"tip": "verzweifelt",
+					"question": "She'd asked everybody already, but  no one would help her. She was -------."
+				},
+				{
+					"answer": "displayed",
+					"tip": "zur Schau stellen",
+					"question": "Photograhps were ------ all over the house."
+				},
+				{
+					"answer": "generally",
+					"tip": "allgemein",
+					"question": "Your health is ------ good, but you need to watch what you eat."
+				},
+				{
+					"answer": "poetry",
+					"tip": "Dichtung (nicht Fenster)",
+					"question": "He's been writing ---- for years."
+				},
+				{
+					"answer": "private property",
+					"tip": "Privatbesitz",
+					"question": "Get out! This is ------ ----."
+				},
+				{
+					"answer": "sexes",
+					"tip": "Geschlechter",
+					"question": "The battle of the ------ still goes on today."
+				},
+				{
+					"answer": "signature",
+					"tip": "Unterschrift",
+					"question": "We need your ------ on this form, please."
+				},
+				{
+					"answer": "spread",
+					"tip": "Verbreitung, Ausdehnung",
+					"question": "The ---- of certain diseases has gone back in many countries."
+				},
+				{
+					"answer": "stylish",
+					"tip": "modisch",
+					"question": "She looked ------ in those shoes. (not ugly)"
+				},
+				{
+					"answer": "tagging",
+					"tip": "Markierung (auf einer Wand)",
+					"question": "There was a ----- on the wall - I think it was James Johnson."
+				},
+				{
+					"answer": "vandalism",
+					"tip": "Vandalismus",
+					"question": "Some people think graffiti is ------- - I think it's art."
+				},
+				{
+					"answer": "hang out",
+					"tip": "herumhängen",
+					"question": "We should all just ----- --- at the youth club."
+				},
+				{
+					"answer": "hook up with",
+					"tip": "anschließen, jemanden verkuppeln",
+					"question": "David wanted me to ---- --- ---- his gang last night, but I didn't go."
+				},
+				{
+					"answer": "disadvantage",
+					"tip": "Nachteil",
+					"question": "If you want to be a dancer, being tall is a ---------."
+				},
+				{
+					"answer": "exact",
+					"tip": "genau",
+					"question": "Tell me the ------ time please, I need to set my alarm. "
+				},
+				{
+					"answer": "went wrong",
+					"tip": "fehlschlagen",
+					"question": "I just don't know where my plan ---- ---."
+				},
+				{
+					"answer": "perception",
+					"tip": "Auffassung, Wahrnehmung",
+					"question": "Art can change people's ------- of real life."
+				},
+				{
+					"answer": "scared",
+					"tip": "verängstigt",
+					"question": "It was dark on the way home and I got ---------."
+				},
+				{
+					"answer": "charged",
+					"tip": "aufgeladen",
+					"question": "Is my phone ----- yet because I need it urgently?"
+				},
+				{
+					"answer": "cage",
+					"tip": "Käfig",
+					"question": "The tiger tried to escape from its -----."
+				},
+				{
+					"answer": "acted",
+					"tip": "sich benehmen",
+					"question": "He ----- as if he had already won the race."
+				},
+				{
+					"answer": "advertise",
+					"tip": "etwas bewerben",
+					"question": "We're going to ----- our new product on TV."
+				},
+				{
+					"answer": "amused",
+					"tip": "amüsiert",
+					"question": "I was not ----- when I heard what they did."
+				},
+				{
+					"answer": "blind",
+					"tip": "blind",
+					"question": "She has been ----- since she had the accident. (not annoying)"
+				},
+				{
+					"answer": "creative",
+					"tip": "kreativ",
+					"question": "I'm not a ---- person, but I love painting!"
+				},
+				{
+					"answer": "expect ",
+					"tip": "erwarten",
+					"question": "I didn't ----- it to be so cold."
+				},
+				{
+					"answer": "invited",
+					"tip": "einladen",
+					"question": "She ---- me to her party next week."
+				},
+				{
+					"answer": "mad",
+					"tip": "verrückt",
+					"question": "She must be ---- driving at such high speed."
+				},
+				{
+					"answer": "treats",
+					"tip": "behandeln",
+					"question": "I think my teacher ----- me really unfairly."
+				},
+				{
+					"answer": "glued",
+					"tip": " kleben",
+					"question": "My eyes were ---- to my TV on September 11, 2001."
+				},
+				{
+					"answer": "deleted",
+					"tip": "löschen",
+					"question": "Oh no! I've ------ all my files!"
+				},
+				{
+					"answer": "honest",
+					"tip": "ehrlich",
+					"question": "Let's be -----  - that show isn't really funny."
+				},
+				{
+					"answer": "certainty",
+					"tip": "Gewissheit",
+					"question": "I can tell you with absolute ------ that they are no longer together"
+				},
+				{
+					"answer": "guilty",
+					"tip": "schuldig",
+					"question": "He was ----- of several crimes."
+				},
+				{
+					"answer": "homeless",
+					"tip": "obdachlos",
+					"question": "Many ---- people sleep in the park"
+				},
+				{
+					"answer": "shoplifting",
+					"tip": "Ladendiebstahl",
+					"question": "You can't just take those sunglasses, that's --------!"
+				},
+				{
+					"answer": "burglary",
+					"tip": "Einbruch",
+					"question": "The town's major crime is -----. We need to do something about it."
+				},
+				{
+					"answer": "joyriding",
+					"tip": "gefährliche Fahrt mit einem gestohlenen Fahrzeug",
+					"question": "Mark wanted me to go ------ with him, but I didn't go, I don't want to get into trouble! "
+				},
+				{
+					"answer": "pick-pocketing",
+					"tip": "Taschendiebstahl",
+					"question": "Barcelona is famous for ist main street \"Ramblas\", on which there is always a lot of ------ ----."
+				},
+				{
+					"answer": "broke into",
+					"tip": "einbrechen",
+					"question": "The bank robbers ----- --- the bank and stole millions"
+				},
+				{
+					"answer": "got caught up in",
+					"tip": "in etwas geraten",
+					"question": "We got ----- --  a traffic jam in the middle of town."
+				},
+				{
+					"answer": "chase",
+					"tip": "Jagd",
+					"question": "Did you watch the car ----- on TV yesterday?"
+				},
+				{
+					"answer": "Law breakers",
+					"tip": "Gesetzesbrecher/in",
+					"question": ".------- --- need to have the proper punishment. (not ex-FPÖ-politicians)"
+				},
+				{
+					"answer": "mess up",
+					"tip": "vermasseln",
+					"question": "Will you read the scene with me? I really don't want to ----- this performace ----."
+				},
+				{
+					"answer": "put on probation",
+					"tip": "auf Bewährung sein",
+					"question": "He was ---- ---- ---- after his years in prison."
+				},
+				{
+					"answer": "community service",
+					"tip": "Gemeindedienst",
+					"question": "She got caught shoplifting and now has to do 200 hours of ----- -----."
+				},
+				{
+					"answer": "society",
+					"tip": "Gesellschaft",
+					"question": "We live in a multi-cultural -------."
+				},
+				{
+					"answer": "offenders",
+					"tip": "Straftäter/in",
+					"question": "The list of ----- is long - I don't know whether we'll find the right criminal."
+				},
+				{
+					"answer": "report",
+					"tip": "berichten",
+					"question": "You should really ------ the incident to the police."
+				},
+				{
+					"answer": "solution",
+					"tip": "Lösung",
+					"question": "Have you found a ----- to the problem?"
+				},
+				{
+					"answer": "burgled",
+					"tip": "einbrechen",
+					"question": "That house has been ----- three times already!"
+				},
+				{
+					"answer": "blame",
+					"tip": "Schuld",
+					"question": "I didn't do it! I always have to take the -------!"
+				},
+				{
+					"answer": "breath",
+					"tip": "Atem",
+					"question": "She ran so fast, she's having trouble catching her ------."
+				},
+				{
+					"answer": "burglar",
+					"tip": "Einbrecher/in",
+					"question": "That ------ came in the middle of the day and stole my necklace! Unbelievable! (no swear words)"
+				},
+				{
+					"answer": "clergymen",
+					"tip": "Geistlicher",
+					"question": "The church needs ----- to help the people."
+				},
+				{
+					"answer": "naughty",
+					"tip": "ungezogen",
+					"question": "You've been ------ - go to your room!"
+				},
+				{
+					"answer": "parrot",
+					"tip": "Papagei/in",
+					"question": "The ----- started talking and the burglar ran away."
+				},
+				{
+					"answer": "priest",
+					"tip": "Priester/in",
+					"question": "The ----- wasn't at church yesterday. (not devil)"
+				},
+				{
+					"answer": "relief",
+					"tip": "Erleichterung",
+					"question": "It was such a ----- to find out we weren't having our test. I hadn't had time to study."
+				},
+				{
+					"answer": "reply",
+					"tip": "antworten",
+					"question": "I asked her the same question again and again but she didn't --------."
+				},
+				{
+					"answer": "screamed",
+					"tip": "schreien ",
+					"question": "It was so scary we all -------."
+				},
+				{
+					"answer": "expectations",
+					"tip": "Erwartung",
+					"question": "At the start of the game, ------ were high."
+				},
+				{
+					"answer": "rush",
+					"tip": "hetzen",
+					"question": "Slow down! There's no need to -----."
+				},
+				{
+					"answer": "drops",
+					"tip": "Tropfen",
+					"question": "It rained so hard the ----- of rain were huge."
+				},
+				{
+					"answer": "edge",
+					"tip": "Kante, Rand",
+					"question": "The film was so exciting we were sitting on the ---- of our seats."
+				},
+				{
+					"answer": "jumped up",
+					"tip": "aufspringen, hoch springen",
+					"question": "She saw me and ----- ---- immediately. (not hit me)"
+				},
+				{
+					"answer": "purest",
+					"tip": "rein",
+					"question": "Diamonds are the ----- form of carbon."
+				},
+				{
+					"answer": "weigh",
+					"tip": "wiegen",
+					"question": "How much does your luggage -----, Ma'am?"
+				},
+				{
+					"answer": "yards",
+					"tip": "Yard (Maßeinheit, ca. 91,5cm)",
+					"question": "Turn right after 200 ------."
+				},
+				{
+					"answer": "dig",
+					"tip": "graben",
+					"question": "Let's ---- our way to China!"
+				},
+				{
+					"answer": "jail",
+					"tip": "Gefängnis",
+					"question": "He was released from ----- last week."
+				},
+				{
+					"answer": "shocking",
+					"tip": "schockierend",
+					"question": "Did you hear what happened to him? It's so ----------!"
+				},
+				{
+					"answer": "taken up",
+					"tip": "etwas aufnehmen",
+					"question": "I've ------ ---- knitting - it calms my nerves."
+				},
+				{
+					"answer": "heart attack",
+					"tip": "Herzanfall",
+					"question": "He had a ---- --- last night - it was awful."
+				},
+				{
+					"answer": "benefit",
+					"tip": "Vorteil, Nutzen",
+					"question": "I see no ------ for us in this deal at all."
+				},
+				{
+					"answer": "laid",
+					"tip": "legen",
+					"question": "She ------ the baby on the bed. (not shot)"
+				},
+				{
+					"answer": "via",
+					"tip": "über",
+					"question": "We're flying to Australia ----- Dubai and Bangkok."
+				},
+				{
+					"answer": "assassination",
+					"tip": "Ermordung",
+					"question": "The president's ----- led to riots all over the country."
+				},
+				{
+					"answer": "blackmail",
+					"tip": "Erpressung",
+					"question": "Some people use ----- as a way to earn money."
+				},
+				{
+					"answer": "kidnapping",
+					"tip": "Entführung",
+					"question": "Ten days after his ------- the police finally got to a lead."
+				},
+				{
+					"answer": "mugging",
+					"tip": "Überfall auf der Straße",
+					"question": "He was arrested for the ----- of an old lady."
+				},
+				{
+					"answer": "smuggling",
+					"tip": "Schmuggeln",
+					"question": "Police are trying to fight cigarette -----------."
+				},
+				{
+					"answer": "Theft",
+					"tip": "Diebstahl",
+					"question": ".-------- is a serious crime that can put you in jail."
+				},
+				{
+					"answer": "log on",
+					"tip": "to connect to the Internet/a website",
+					"question": "You need your password to --- ---."
+				},
+				{
+					"answer": "look after",
+					"tip": "to take care of",
+					"question": "It's hard work ------ --- three children all day."
+				},
+				{
+					"answer": "look up",
+					"tip": "to try to find information in a book, etc.",
+					"question": "I had to ---- the word --- in a dictionary."
+				},
+				{
+					"answer": "made up",
+					"tip": "to invent an explanation, excuse, etc.",
+					"question": "He --- --- some excuse about the dog eating his homework."
+				},
+				{
+					"answer": "moving in",
+					"tip": "to start living in a new house, etc.",
+					"question": "We're ----- --- next week."
+				},
+				{
+					"answer": "pay back",
+					"tip": "to return money (to someone)",
+					"question": "Did you ----- Denise -----?"
+				},
+				{
+					"answer": "pick up",
+					"tip": "to lift something from the floor, a table, etc.",
+					"question": "Please --- those toys--- and put them away."
+				},
+				{
+					"answer": "pointed out",
+					"tip": "to tell someone important information",
+					"question": "He ----- ---- that we had two hours of free time before dinner."
+				},
+				{
+					"answer": "print out",
+					"tip": "to make a paper copy of something on a computer",
+					"question": "Let me ---- those photographs ---- for you."
+				},
+				{
+					"answer": "pulled off",
+					"tip": "to break by pulling",
+					"question": "I --- -- the arm of my sunglasses by mistake."
+				},
+				{
+					"answer": "put away",
+					"tip": "to return something where it belongs",
+					"question": "He --- the notebook --- and stood up."
+				},
+				{
+					"answer": "put back",
+					"tip": "to return something where it was",
+					"question": "Can you --- the notebook --- when you've finished with it?"
+				},
+				{
+					"answer": "put down",
+					"tip": "to stop holding",
+					"question": "Emma --- her bag ---- and went upstairs."
+				},
+				{
+					"answer": "put off",
+					"tip": "to delay to a later time",
+					"question": "Can we --- the meeting --- until tomorrow?"
+				},
+				{
+					"answer": "put on",
+					"tip": "to gain (weight)",
+					"question": "I don't want to --- -- any more weight!"
+				},
+				{
+					"answer": "put on",
+					"tip": "to start wearing (a piece of clothing)",
+					"question": ".---- your gloves and scarf --- - it's cold outside."
+				},
+				{
+					"answer": "put out",
+					"tip": "to make something stop burning",
+					"question": "It took three firefighters to --- the fire ---."
+				},
+				{
+					"answer": "put up",
+					"tip": "to put something on a wall (e.g. a picture)",
+					"question": "The teachers will ---- a notice --- about the new courses."
+				},
+				{
+					"answer": "read out",
+					"tip": "to say something loud which you are reading",
+					"question": "He --- the list of names -----."
+				},
+				{
+					"answer": "Rip up",
+					"tip": "to tear into pieces",
+					"question": ".--- -- this piece of paper when you've finished reading it."
+				},
+				{
+					"answer": "rub out",
+					"tip": "to remove with a rubber",
+					"question": "I can't --- it -- because I wrote it in pen."
+				},
+				{
+					"answer": "ran away",
+					"tip": "to escape by running",
+					"question": "The thief -- --- from the police officers."
+				},
+				{
+					"answer": "running out",
+					"tip": "to not have any left",
+					"question": "Many hospitals are ---- ---- of money."
+				},
+				{
+					"answer": "saving up",
+					"tip": "to save money (for a specific purpose)",
+					"question": "I'm ---- --- for a new electric guitar."
+				},
+				{
+					"answer": "sent off",
+					"tip": "to make a player leave a game (e.g. football)",
+					"question": "It was a very bad foul and the referee -- the player ---."
+				},
+				{
+					"answer": "seting off",
+					"tip": "to start a journey",
+					"question": "Go to sleep because we're ---- -- early in the morning."
+				},
+				{
+					"answer": "set up",
+					"tip": "to start (business, organization, etc.)",
+					"question": "My dad is going to ---- -- a taxi company."
+				},
+				{
+					"answer": "got away with",
+					"tip": "to escape punishment for",
+					"question": "They have repeatedly broken the law and ---- --- --- it."
+				},
+				{
+					"answer": "getting into",
+					"tip": "to enter a car",
+					"question": "I hurt my head as I was ----- --- the car."
+				},
+				{
+					"answer": "get off",
+					"tip": "to leave a bus/train/etc.",
+					"question": "You need to ---- --- the bus opposite the supermarket."
+				},
+				{
+					"answer": "get on",
+					"tip": "to have a good relationship (with)",
+					"question": "She seems to -- -- with everybody."
+				},
+				{
+					"answer": "get on",
+					"tip": "to enter a bus/train/etc.",
+					"question": "You can buy a ticket when you --- --- the bus."
+				},
+				{
+					"answer": "Get out",
+					"tip": "to leave a car/building/room/etc.",
+					"question": "Quick! --- -- of the car!"
+				},
+				{
+					"answer": "get over",
+					"tip": "to recover from (an illness, etc.)",
+					"question": "It can take weeks to --- --- an illness like that."
+				},
+				{
+					"answer": "gets up",
+					"tip": "to leave your bed",
+					"question": "He never ---- --- before nine."
+				},
+				{
+					"answer": "giving away",
+					"tip": "to give something free of charge",
+					"question": "They're --- --- free tickets at the cinema!"
+				},
+				{
+					"answer": "give back",
+					"tip": "to return something you've taken/borrowed",
+					"question": "Could you --- my CDs ---- because you've had them for two weeks."
+				},
+				{
+					"answer": "give up",
+					"tip": "to stop something you do regularly",
+					"question": "You should ------ --- smoking."
+				},
+				{
+					"answer": "go away",
+					"tip": "to leave a place/someone",
+					"question": "Why don't you just -- --- and leave me alone?"
+				},
+				{
+					"answer": "go back",
+					"tip": "to return(to)",
+					"question": "I can't wait to ---- --- to Italy."
+				},
+				{
+					"answer": "gone off",
+					"tip": "to no longer be fresh",
+					"question": "Has this milk ---- ----?"
+				},
+				{
+					"answer": "go on",
+					"tip": "to continue happening or doing something",
+					"question": "Please --- -- with your work while I speak to the head teacher."
+				},
+				{
+					"answer": "going on",
+					"tip": "to happen",
+					"question": "There isn't much ---- -- in this town in the evening."
+				},
+				{
+					"answer": "gone out",
+					"tip": "to stop burning",
+					"question": "The fire must have --- -- during the night."
+				},
+				{
+					"answer": "go out",
+					"tip": "to be the girlfriend/boyfriend of",
+					"question": "Greg used to --- -- with Katy."
+				},
+				{
+					"answer": "growing up",
+					"tip": "to become older (for children)",
+					"question": "He rarely saw his father while he was ----- ---."
+				},
+				{
+					"answer": "hang on",
+					"tip": "to wait",
+					"question": "Just ---- --- - I'll be ready in a minute."
+				},
+				{
+					"answer": "hung up",
+					"tip": "to put clothes in a wardrobe, etc.",
+					"question": "The women----- ---their coats and sat down."
+				},
+				{
+					"answer": "hung up",
+					"tip": "to put the receiver down to end a phone call",
+					"question": "I can't believe that Jessica --- -- without saying goodbye!"
+				},
+				{
+					"answer": "had on",
+					"tip": "to wear (a piece of clothing)",
+					"question": "The man --- a strange hat ---."
+				},
+				{
+					"answer": "hurry up",
+					"tip": "to do something more quickly",
+					"question": "We haven't got much time, so ---- ---!"
+				},
+				{
+					"answer": "join in",
+					"tip": "to participate, take part",
+					"question": "Ask them if you can play - I'm sure they'll let you ---- ---."
+				},
+				{
+					"answer": "kept out",
+					"tip": "to prevent from entering",
+					"question": "Cars should be --- -- of the city centre."
+				},
+				{
+					"answer": "leave out",
+					"tip": "to not include",
+					"question": "Don't --- your brother --- - let him play with you and your friends."
+				},
+				{
+					"answer": "let down",
+					"tip": "to disappoint",
+					"question": "You've really --- me ----."
+				},
+				{
+					"answer": "lie down",
+					"tip": "to start lying (on a bed, etc.)",
+					"question": "I'm going to go and ---- --- for a while."
+				},
+				{
+					"answer": "log off",
+					"tip": "to disconnect from the Internet/ a website",
+					"question": "Don't forget to --- -- when you've finished checking your e-mail."
+				},
+				{
+					"answer": "added up",
+					"tip": "to find the total of",
+					"question": "The shop assistant --- -- what I'd bought and told me the total."
+				},
+				{
+					"answer": "blow up",
+					"tip": "to explode",
+					"question": "Luckily, the bomb didn't ----- ---."
+				},
+				{
+					"answer": "broke down",
+					"tip": "to stop working (for a machine, etc.)",
+					"question": "Our car --- --- on the motorway."
+				},
+				{
+					"answer": "broken into",
+					"tip": "to enter illegally",
+					"question": "A house in Brecon Place was ---- -- last night."
+				},
+				{
+					"answer": "brought up",
+					"tip": "to take care of a child until he or she becomes an adult",
+					"question": "She ---- --- three sons on her own."
+				},
+				{
+					"answer": "building up",
+					"tip": "to increase",
+					"question": "These exercises are good for ---- -- leg strength."
+				},
+				{
+					"answer": "call back",
+					"tip": "to ring again on the phone",
+					"question": "I'll ---- you --- later when you're not so busy."
+				},
+				{
+					"answer": "called off",
+					"tip": "to cancel",
+					"question": "The concert has been ----- --- because of the weather."
+				},
+				{
+					"answer": "calmed down",
+					"tip": "to become/make calmer",
+					"question": "The woman finally ---- --- and explained what happended."
+				},
+				{
+					"answer": "carried on",
+					"tip": "to continue happening or doing something",
+					"question": "The phone rang, but Mark just ---- --- watching TV."
+				},
+				{
+					"answer": "catch up",
+					"tip": "to reach the same point/level as",
+					"question": "He's missed so much school that he's going to find it hard to --- ---."
+				},
+				{
+					"answer": "cheer up",
+					"tip": "to become/make happier",
+					"question": "I started to ---- --- when the sun came out."
+				},
+				{
+					"answer": "clear up",
+					"tip": "to tidy",
+					"question": "I'll ---- --- if you want to go to bed."
+				},
+				{
+					"answer": "came across",
+					"tip": "to find something by chance",
+					"question": "I --- --- a word I'd never seen before."
+				},
+				{
+					"answer": "come back",
+					"tip": "to return (from)",
+					"question": "Give me a call when you -- --- from Greece."
+				},
+				{
+					"answer": "Come on",
+					"tip": "to be quicker",
+					"question": ".----- ---, or we'll be late!"
+				},
+				{
+					"answer": "come out",
+					"tip": "to be published",
+					"question": "When does her new book ---- ---?"
+				},
+				{
+					"answer": "cross out",
+					"tip": "to draw a line through something written",
+					"question": "Just --- it --- and rewrite it correctly."
+				},
+				{
+					"answer": "cut down",
+					"tip": "to do less of something (smoking, etc.)",
+					"question": "I'm trying to --- -- on the amount of sugar I eat."
+				},
+				{
+					"answer": "cut off",
+					"tip": "to disconnect (phone, electricity, etc.)",
+					"question": "Pay the electricity bill tomorrow or they might --- us ----."
+				},
+				{
+					"answer": "cutting off",
+					"tip": "to completely remove by cutting",
+					"question": "Keep your roses healthy by ---- ----- any dead flowers."
+				},
+				{
+					"answer": "do up",
+					"tip": "to button/zip a pieace of clothing",
+					"question": "It's very windy, so --- your coat ---."
+				},
+				{
+					"answer": "eat out",
+					"tip": "to eat at a restaurant",
+					"question": "Would you like to stay in or ---- ---- tonight?"
+				},
+				{
+					"answer": "fell down",
+					"tip": "to trip and fall",
+					"question": "I --- --- and hurt my knee. that's true"
+				},
+				{
+					"answer": "fallen out",
+					"tip": "to have an argument with someone and stop being friends",
+					"question": "Have you two ---- ---?"
+				},
+				{
+					"answer": "fill in",
+					"tip": "to add information in the spaces on a form, etc.",
+					"question": "Just ---- -- this application form, please."
+				},
+				{
+					"answer": "fill up",
+					"tip": "to make something completely full",
+					"question": "Just --- this bowl -- with sugar and put it on the table."
+				},
+				{
+					"answer": "find out",
+					"tip": "to discover information, etc.",
+					"question": "I don't want Jerry to --- --- about this."
+				},
+				{
+					"answer": "shared out",
+					"tip": "to give a part of something to a group of people",
+					"question": "The money will be ----- --- between 30 different environmental organizations."
+				},
+				{
+					"answer": "shut up",
+					"tip": "to stop talking, stop making a noise",
+					"question": "Just ---- --- a minute and let me tell you what happened!"
+				},
+				{
+					"answer": "sit down",
+					"tip": "to (start to) sit",
+					"question": "Please, ---- --- and make yourselves comfortable"
+				},
+				{
+					"answer": "sort out",
+					"tip": "to solve a problem",
+					"question": "Investigators are still trying to ---- --- why the accident happened."
+				},
+				{
+					"answer": "speak up",
+					"tip": "to talk more loudly so someone can hear you",
+					"question": "Your have to ---- --- a bit because my gran's a bit deaf."
+				},
+				{
+					"answer": "split up",
+					"tip": "to end a relationship",
+					"question": "Tommy and Liz have just ---- ---. It's very sad!"
+				},
+				{
+					"answer": "standing up",
+					"tip": "to (start to) stand",
+					"question": "You have the chair. I don't mind ------ ----."
+				},
+				{
+					"answer": "stayed up",
+					"tip": "to go to bed late",
+					"question": "We ---- --- until two o'clock last night."
+				},
+				{
+					"answer": "taken away",
+					"tip": "to remove",
+					"question": "Have they ----- the rubbish ---- yet?"
+				},
+				{
+					"answer": "take back",
+					"tip": "to return something to the place it came fron",
+					"question": "I'm going to ---- my library books ----."
+				},
+				{
+					"answer": "took down",
+					"tip": "tor remove (from a high place)",
+					"question": "The old man ---- a large book ----- from a shelf."
+				},
+				{
+					"answer": "take off",
+					"tip": "to remove (a piece of clothing)",
+					"question": "It felt good to finally ---- my shoes ---- after a long day."
+				},
+				{
+					"answer": "take off",
+					"tip": "to leave the ground",
+					"question": "Let's go and watch the planes ---- ---- while we wait."
+				},
+				{
+					"answer": "take over",
+					"tip": "to take control of (a business, etc.)",
+					"question": "The shopping centre has been ----- --- by an American company."
+				},
+				{
+					"answer": "taken up",
+					"tip": "to start (a hobby, sport, etc.)",
+					"question": "I've --- ---- stamp collecting and it's really interesting."
+				},
+				{
+					"answer": "thrown away",
+					"tip": "to put something in a rubbish bin",
+					"question": "Have you ---- the papers ----?"
+				},
+				{
+					"answer": "try on",
+					"tip": "to put on (a piece of clothing) to see how it looks and if it fits",
+					"question": "You should --- it --- to see if it's the right size."
+				},
+				{
+					"answer": "Turn down",
+					"tip": "to lower the volume of",
+					"question": ".-------- the radio ---- - I'm trying to work."
+				},
+				{
+					"answer": "turn off",
+					"tip": "to stop a machine working",
+					"question": "Will you ----- the television ---, please?"
+				},
+				{
+					"answer": "turn on",
+					"tip": "to start a machine working",
+					"question": "Will you --- the televison ----, please?"
+				},
+				{
+					"answer": "turn over",
+					"tip": "to turn something so the other side is towards you",
+					"question": "You may --- --- your exam papers now"
+				},
+				{
+					"answer": "turn up",
+					"tip": "to increase the volume of",
+					"question": "We asked our teacher to ---- the CD ---, so that we could hear it."
+				},
+				{
+					"answer": "Wake up",
+					"tip": "to stop being asleep",
+					"question": ".------ ---! It's nearly ten o'clock!"
+				},
+				{
+					"answer": "wash up",
+					"tip": "to wash plates, cups, cutlery, etc",
+					"question": "I can help to cook and ----- ---."
+				},
+				{
+					"answer": "Watch out",
+					"tip": "to be careful",
+					"question": ". ---------- ------- - you're going to hit that car!"
+				},
+				{
+					"answer": "work out",
+					"tip": "to find the solution to a problem, etc.",
+					"question": "We can't ---- --- how to get the Internet connection going."
+				},
+				{
+					"answer": "write down",
+					"tip": "to write information on a piece of paper",
+					"question": "Do you want to ---- --- my phone number?"
+				}
+
+			];
+
+		let which = Math.floor(Math.random() * tasks.length);
+		var thisTask = tasks[which];
+		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
+
+
+		let richtigWort = thisTask.answer;
+
+
+		function getInputValue() {
+			var inputVar = document.getElementById("Myinput").value;
+
+			if (inputVar === richtigWort) {
+				alert("Muy bien =)");
+				location.href = location.href
+			} else {
+				document.getElementById("error").innerHTML = "Esta mal!!! Inténtalo otra vez";
+
+			}
+		}
+
+		document.getElementById("myQuestion").innerHTML = thisTask.question 
 
 
 
 
+		var input = document.getElementById("Myinput");
+		input.addEventListener("keypress", function (event) {
+			if (event.key === "Enter") {
+				// Cancel the default action, if needed
+				event.preventDefault();
+				// Trigger the button element with a click
+				document.getElementById("Antwortbutton").click();
+			}
+		});
 
 
 
+		var inputVar = document.getElementById("Myinput");
+		inputVar.select();
+
+	</script>
+
+	<div style="font-size: 70px; color: crimson;" id="error"></div>
 
 
-
-
-
+</body>
 
 </html>
