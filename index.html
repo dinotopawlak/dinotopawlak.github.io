@@ -11,7 +11,7 @@
 
 	<p id="myQuestion"></p>
 
-	
+
 	<label style="font-size:20px" for="name"> Hier das gewünschte Wort schreiben:</label>
 
 	<input type="text" style="height:23px;font-size:20px" id="Myinput">
@@ -19,11 +19,995 @@
 	<button type="button" style="height:40px;font-size:20px" id="Antwortbutton"
 		onclick="getInputValue()">Submit</button>
 	<br>
-	<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button> 
+	<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>
 
 	<script>
 
 		var tasks =
+			[
+				{
+					"answer": "promiscous behaviour",
+					"question": "Many wives are unaware of the --- ---- of their husbands.",
+					"tip": ""
+				},
+				{
+					"answer": "to have/get an abortion",
+					"question": "Though I --- ---- ----, we got married one year later.",
+					"tip": ""
+				},
+				{
+					"answer": "to give a baby up for adoption",
+					"question": "Their options were either to ----- ---- ------ ---- ---- ----- or leave school and get married",
+					"tip": ""
+				},
+				{
+					"answer": "to act one's age",
+					"question": "Not ---- ---- ---- can be embarrassing",
+					"tip": ""
+				},
+				{
+					"answer": "contraception",
+					"question": "For advice on ------- talk to your doctor.",
+					"tip": ""
+				},
+				{
+					"answer": "suspense",
+					"question": "His movie delivered ---- in more ways than one.",
+					"tip": ""
+				},
+				{
+					"answer": "to frown",
+					"question": "Snoozing in the stalls has often been ----- upon",
+					"tip": ""
+				},
+				{
+					"answer": "witch",
+					"question": "Baba Yaga is an ancient ----- from Russian folktales",
+					"tip": ""
+				},
+				{
+					"answer": "naive",
+					"question": "Don't be so -----! Of course she was lying to you",
+					"tip": ""
+				},
+				{
+					"answer": "daft",
+					"question": "This is a film version of the play, and it's completely -----.",
+					"tip": ""
+				},
+				{
+					"answer": "conception",
+					"question": "Caffeine interferes with -----.",
+					"tip": ""
+				},
+				{
+					"answer": "to appreciate sth.",
+					"question": "My true fans will ----- this album",
+					"tip": ""
+				},
+				{
+					"answer": "to avoid sth.",
+					"question": "We could have ------ the losses if more had been done to implement safety standards in the industry.",
+					"tip": ""
+				},
+				{
+					"answer": "appointment",
+					"question": "She had to cancel a dental -----.",
+					"tip": ""
+				},
+				{
+					"answer": "purpose",
+					"question": "What's the ------------- of a music video?",
+					"tip": ""
+				},
+				{
+					"answer": "to comfort sb.",
+					"question": "Listening to my favourite record ---- me.",
+					"tip": ""
+				},
+				{
+					"answer": "hardship",
+					"question": "They are insured against future ------.",
+					"tip": ""
+				},
+				{
+					"answer": "tremendous",
+					"question": "This is a ----- achievement for the school.",
+					"tip": ""
+				},
+				{
+					"answer": "to start all over",
+					"question": "I hope you have the courage to ---- --- --- again.",
+					"tip": ""
+				},
+				{
+					"answer": "paraphrase",
+					"question": "Right after reading write your ----- on a notepad",
+					"tip": ""
+				},
+				{
+					"answer": "to pay attention to sb./sth.",
+					"question": "I noticed that when a team member spoke, no one ---- -----.",
+					"tip": ""
+				},
+				{
+					"answer": "calories",
+					"question": "You can drink your ---------- via specially designed juices.",
+					"tip": ""
+				},
+				{
+					"answer": "to be jealous of sb./sth.",
+					"question": "Sharon ---- ---- ---- --- and considered me her rival, but I couldn't understand why",
+					"tip": ""
+				},
+				{
+					"answer": "obsession with",
+					"question": "His ---- ---- shoes is beginning to worry me.",
+					"tip": ""
+				},
+				{
+					"answer": "emphatic",
+					"question": "They resigned with an -----  statement.",
+					"tip": ""
+				},
+				{
+					"answer": "pathetic",
+					"question": "Bike thieves are petty, ----- fools.",
+					"tip": ""
+				},
+				{
+					"answer": "to be driven about sth.",
+					"question": "She --- very committed and ---- --- her work.",
+					"tip": ""
+				},
+				{
+					"answer": "frankly",
+					"question": ".-----, I'm not very interested.",
+					"tip": ""
+				},
+				{
+					"answer": "luckily",
+					"question": ".-----, we were on time.",
+					"tip": ""
+				},
+				{
+					"answer": "anniversary",
+					"question": "They celebrated their 25th ----- with a fancy dinner.",
+					"tip": ""
+				},
+				{
+					"answer": "to break up with sb.",
+					"question": "I can't believe that Sandra finally ---- ---- --- Tom.",
+					"tip": ""
+				},
+				{
+					"answer": "to crash a party",
+					"question": "Freshmen from nearby dorms ---- --- ---.",
+					"tip": ""
+				},
+				{
+					"answer": "to host sth.",
+					"question": "London --- the 2012 Summer Olympics",
+					"tip": ""
+				},
+				{
+					"answer": "to do for a living",
+					"question": "What -- you ---- ---- -- ---- before you retired?",
+					"tip": ""
+				},
+				{
+					"answer": "to submit sth.",
+					"question": "We will ---- a detailed report to the committee.",
+					"tip": ""
+				},
+				{
+					"answer": "current",
+					"question": "They promise practical solutions to many ---- needs.",
+					"tip": ""
+				},
+				{
+					"answer": "outline",
+					"question": "She has already seen the ---- of the film script.",
+					"tip": ""
+				},
+				{
+					"answer": "to exchange",
+					"question": "We ---- tips about what works in our communities.",
+					"tip": ""
+				},
+				{
+					"answer": "participation",
+					"question": ".----- in physical activities is recommended.",
+					"tip": ""
+				},
+				{
+					"answer": "competitor",
+					"question": ".----- analysis is a vital part of strategic process.",
+					"tip": ""
+				},
+				{
+					"answer": "to fear sth.",
+					"question": "Earthquake: Thousands ----- dead.",
+					"tip": ""
+				},
+				{
+					"answer": "over-ambitious",
+					"question": "Be -------- and maybe you will get halfway there.",
+					"tip": ""
+				},
+				{
+					"answer": "sedentary",
+					"question": "A ----- lifestyle tends to be less healthy.",
+					"tip": ""
+				},
+				{
+					"answer": "to see nothing wrong in",
+					"question": "She ---- ---- ---- -- having gone out on her own.",
+					"tip": ""
+				},
+				{
+					"answer": "to catch the marathon bug",
+					"question": "Who knows, I might ---- --- ---- --- this race.",
+					"tip": ""
+				},
+				{
+					"answer": "inspire",
+					"question": "What ---- you to paint those pictures?",
+					"tip": ""
+				},
+				{
+					"answer": "to gather information",
+					"question": "Martin has to ------- ----- to present the board.",
+					"tip": ""
+				},
+				{
+					"answer": "employment",
+					"question": ".---- decreased by 39,000 last year",
+					"tip": ""
+				},
+				{
+					"answer": "age of consent",
+					"question": "The --- ---- --- in the UK is 16.",
+					"tip": ""
+				},
+				{
+					"answer": "criminal responsibility",
+					"question": "Ministers have raised the age of ----- -------.",
+					"tip": ""
+				},
+				{
+					"answer": "court decision",
+					"question": "You can appeal a --- ---- only once.",
+					"tip": ""
+				},
+				{
+					"answer": "under certain conditions",
+					"question": "This law does not apply ---- --- ---.",
+					"tip": ""
+				},
+				{
+					"answer": "lack of maturity",
+					"question": "I worry that David's ---- --- --- could be harmful",
+					"tip": ""
+				},
+				{
+					"answer": "to take to court",
+					"question": "He is one of the last people they want to ---- --- --.",
+					"tip": ""
+				},
+				{
+					"answer": "appropiate",
+					"question": "Everybody should dress ----- for the occasion.",
+					"tip": ""
+				},
+				{
+					"answer": "age limit",
+					"question": "There is no ---- ---- - all citizens are invited to apply",
+					"tip": ""
+				},
+				{
+					"answer": "proverb",
+					"question": "A ------ is a short saying stating a general truth.",
+					"tip": ""
+				},
+				{
+					"answer": "hedge",
+					"question": "We are offering ---- and hedge plants in all sizes.",
+					"tip": ""
+				},
+				{
+					"answer": "loyalty",
+					"question": "Earn ---- points by playing this game online.",
+					"tip": ""
+				},
+				{
+					"answer": "controversial issue",
+					"question": "A meeting will be held to disuss the -------- ---------.",
+					"tip": ""
+				},
+				{
+					"answer": "to entrust",
+					"question": "Who would -------- their money to an investment fund?",
+					"tip": ""
+				},
+				{
+					"answer": "juicy secret",
+					"question": "The ---- ---- to getting your ex-boyfriend back.",
+					"tip": ""
+				},
+				{
+					"answer": "component",
+					"question": "The broken ----------- needs replacing.",
+					"tip": ""
+				},
+				{
+					"answer": "to keep sth. to oneself",
+					"question": "He said he ---- ---- ---- --- ---- for ten years.",
+					"tip": ""
+				},
+				{
+					"answer": "to ache",
+					"question": "When I was a boy, I ---- to be a scientist.",
+					"tip": ""
+				},
+				{
+					"answer": "to spill the news",
+					"question": "Ms Knowles, have you ----- --- --- to your client?",
+					"tip": ""
+				},
+				{
+					"answer": "word gets back to sb.",
+					"question": "However, ---- ---- ---- to her boss and she was fired.",
+					"tip": ""
+				},
+				{
+					"answer": "to sting",
+					"question": "A warm of killer bees ---- a mushroom-picker to death.",
+					"tip": ""
+				},
+				{
+					"answer": "ego",
+					"question": "It requires a big ---- to run for president.",
+					"tip": ""
+				},
+				{
+					"answer": "commitment",
+					"question": "Firefighters show ----- to the disabled.",
+					"tip": ""
+				},
+				{
+					"answer": "to bring out sth.",
+					"question": "Our fun games guarantee to ---- --- the kid in you.",
+					"tip": ""
+				},
+				{
+					"answer": "to repay",
+					"question": "He has 28 days to ---- the amount or face prison. ",
+					"tip": ""
+				},
+				{
+					"answer": "reminder",
+					"question": "Despite several ------, our invoice remained unpaid.",
+					"tip": ""
+				},
+				{
+					"answer": "to hang out with sb.",
+					"question": "We ----- --- --- my dad watching football.",
+					"tip": ""
+				},
+				{
+					"answer": "curfew",
+					"question": "The Council will establish juvenile ----- on 31 October.",
+					"tip": ""
+				},
+				{
+					"answer": "to become defensive",
+					"question": "She ---- ----- after we asked her about Brian.",
+					"tip": ""
+				},
+				{
+					"answer": "to be supposed to do sth.",
+					"question": "She ----- ---- ---- set an example for the contestants.",
+					"tip": ""
+				},
+				{
+					"answer": "straight after",
+					"question": "Bins must be emptied ---- ---- Christmas",
+					"tip": ""
+				},
+				{
+					"answer": "to panic",
+					"question": "I felt a twinge and I guess I ---- a bit.",
+					"tip": ""
+				},
+				{
+					"answer": "guts",
+					"question": "He didn't have the ---- to speak up.",
+					"tip": ""
+				},
+				{
+					"answer": "to lock oneself in",
+					"question": "Gina ---- ---- --- the bathroom for three hours.",
+					"tip": ""
+				},
+				{
+					"answer": "to flush the loo",
+					"question": "We had to ---- --- --- with saved washing-up water.",
+					"tip": ""
+				},
+				{
+					"answer": "to beep",
+					"question": "Quick, check your phone! It -------- right after you left.",
+					"tip": ""
+				},
+				{
+					"answer": "lap",
+					"question": "I grew up on my graddad's lap watching football games.",
+					"tip": ""
+				},
+				{
+					"answer": "to get chocked up",
+					"question": "I ---- ---- ---; it was such an honour to to be there!",
+					"tip": ""
+				},
+				{
+					"answer": "to reckon",
+					"question": "My wife ---- we should start playing the lottery soon.",
+					"tip": ""
+				},
+				{
+					"answer": "cloth",
+					"question": "You can wipe the ball with a wet --- to clean it.",
+					"tip": ""
+				},
+				{
+					"answer": "to dreath sth.",
+					"question": "I really ---- participating in reality shows.",
+					"tip": ""
+				},
+				{
+					"answer": "to face the truth",
+					"question": "He had to --- ---- awful --- that she didn't love him.",
+					"tip": ""
+				},
+				{
+					"answer": "to put sth. off for as long as possible",
+					"question": "Firing people is such an unpleasant experience that most managers will ---------- ----- --- --- --- --- --- ----.",
+					"tip": ""
+				},
+				{
+					"answer": "mature",
+					"question": "I don't know if we are ------ enought for major success.",
+					"tip": ""
+				},
+				{
+					"answer": "to take responsibility for one's actions",
+					"question": "Learning to---- ------- ---- ---- ----- is an important part of growing up.",
+					"tip": ""
+				},
+				{
+					"answer": "multi-ethnic society",
+					"question": "In a ---- ---- ----- people from various backgrounds live togehter peacefully",
+					"tip": ""
+				},
+				{
+					"answer": "cultural influence",
+					"question": "The ---- ---- of the British on their colonies was enormous.",
+					"tip": ""
+				},
+				{
+					"answer": "mass immigration",
+					"question": "Climate change and war might lead to ---- -----.",
+					"tip": ""
+				},
+				{
+					"answer": "for economic reasons",
+					"question": "Years ago their family left Russia ------------.",
+					"tip": ""
+				},
+				{
+					"answer": "to judge sb. By",
+					"question": "You should --- ---- the coulur of their skin.",
+					"tip": ""
+				},
+				{
+					"answer": "physical appearance",
+					"question": "His ------ is rough, but he is really nice.",
+					"tip": ""
+				},
+				{
+					"answer": "plantation owner",
+					"question": ".------- ----- in the US didn't want the slaves to be free.",
+					"tip": ""
+				},
+				{
+					"answer": "slave trade",
+					"question": "The ----- ---- was a key feature of colonialism.",
+					"tip": ""
+				},
+				{
+					"answer": "barber",
+					"question": "My ---- recommended this shampoo to me.",
+					"tip": ""
+				},
+				{
+					"answer": "grocer",
+					"question": "I went to the ------- to get some food for the weekend.",
+					"tip": "grocer's"
+				},
+				{
+					"answer": "the black pound",
+					"question": "The ---- --- has turned out to be important for the local economy-",
+					"tip": ""
+				},
+				{
+					"answer": "verbal abuse",
+					"question": "We were exposed to ---- ---- and nobody stopped it.",
+					"tip": ""
+				},
+				{
+					"answer": "low wage",
+					"question": "Due to their ----- ----, the workers could not afford cars.",
+					"tip": ""
+				},
+				{
+					"answer": "to respond to",
+					"question": "The police ----- ---- the new situation calmly.",
+					"tip": "low wages"
+				},
+				{
+					"answer": "surroundings",
+					"question": "In his ------- there was no one he could relate to.",
+					"tip": ""
+				},
+				{
+					"answer": "factual text",
+					"question": "Don't write about your emotions in a ---- ----.",
+					"tip": ""
+				},
+				{
+					"answer": "complexity",
+					"question": "People often underestimate the ---- of integration.",
+					"tip": ""
+				},
+				{
+					"answer": "to mark",
+					"question": "This ----- the day when they first set foot on the island.",
+					"tip": ""
+				},
+				{
+					"answer": "to judge from",
+					"question": ".------- ----- her appearance she's about 40 years old.",
+					"tip": ""
+				},
+				{
+					"answer": "front room",
+					"question": "The ------ ---- in a small British house is the centre of family.",
+					"tip": ""
+				},
+				{
+					"answer": "caterer",
+					"question": "We disliked their food so we changed the caterer",
+					"tip": ""
+				},
+				{
+					"answer": "diner",
+					"question": "A ---- is a small roadside restaurant",
+					"tip": ""
+				},
+				{
+					"answer": "raffle",
+					"question": "I had lost my ---- ticket and could not claim my price.",
+					"tip": ""
+				},
+				{
+					"answer": "spicy",
+					"question": "I prefer ---- food to flat dishes that taste like nothing.",
+					"tip": ""
+				},
+				{
+					"answer": "duration",
+					"question": "We are not allowed to leave the police station for the ---- of the protest march.",
+					"tip": ""
+				},
+				{
+					"answer": "Masala dosa",
+					"question": ".------ ---- is made from rice, potato, curry leaves and served with chutneys and Dhal.",
+					"tip": ""
+				},
+				{
+					"answer": "chutney",
+					"question": ".----- is made from vegetables or fruit.",
+					"tip": ""
+				},
+				{
+					"answer": "Dhal",
+					"question": ".---- is an Indian dish made from lentils, peas, etc.",
+					"tip": ""
+				},
+				{
+					"answer": "accompaniment",
+					"question": "A traditional ------ would be mushrooms.",
+					"tip": ""
+				},
+				{
+					"answer": "poppadum",
+					"question": "A ----- is a large circular piece of thin, spiced bread made from ground lentils and fried in oil.",
+					"tip": ""
+				},
+				{
+					"answer": "mango lassi",
+					"question": "They serve ---- ----- as a drink to go with traditional Indian dishes.",
+					"tip": ""
+				},
+				{
+					"answer": "to order a meal",
+					"question": ".----------- in a foreign country can be difficult.",
+					"tip": ""
+				},
+				{
+					"answer": "to promote",
+					"question": "If you ------ your project, I am sure it will be successful.",
+					"tip": ""
+				},
+				{
+					"answer": "favourite dish",
+					"question": "Her ---- ---- is curry. She can eat it day in, day out.",
+					"tip": ""
+				},
+				{
+					"answer": "drama school",
+					"question": "After finishing ---- ---- she soon got a part in a film.",
+					"tip": ""
+				},
+				{
+					"answer": "not familiar with",
+					"question": "I am ----- ---- the customs and traditions in India.",
+					"tip": ""
+				},
+				{
+					"answer": "recipe",
+					"question": "My wife got this authentic ----- from a friend in Delhi.",
+					"tip": ""
+				},
+				{
+					"answer": "to lend itself to",
+					"question": "This process does not ---- ---- --- standardisation.",
+					"tip": ""
+				},
+				{
+					"answer": "variation",
+					"question": "Your diet needs -----; otherwise it's not healthy.",
+					"tip": ""
+				},
+				{
+					"answer": "first go at",
+					"question": "Luckily, people liked my ---- --- --- Indian cooking.",
+					"tip": ""
+				},
+				{
+					"answer": "clove of garlic",
+					"question": "A ----- ----- ----- makes your curry spicier.",
+					"tip": ""
+				},
+				{
+					"answer": "tomato puree",
+					"question": "Add ---- ---- to mellow the taste of the onions.",
+					"tip": ""
+				},
+				{
+					"answer": "optional",
+					"question": "We eat curry with rice, other dishes are -----.",
+					"tip": ""
+				},
+				{
+					"answer": "cube",
+					"question": "Some people put ice ---- into their drinks.",
+					"tip": ""
+				},
+				{
+					"answer": "to keep aside",
+					"question": ".--- the meat -- for a later stage.",
+					"tip": ""
+				},
+				{
+					"answer": "to chop",
+					"question": "The onions were ---- into small pieces.",
+					"tip": ""
+				},
+				{
+					"answer": "to fry",
+					"question": ".---- the onions first and then add the meat.",
+					"tip": ""
+				},
+				{
+					"answer": "on low flame",
+					"question": "Cook the goulash --- --- --- for several hours.",
+					"tip": ""
+				},
+				{
+					"answer": "facial expression",
+					"question": "I tried to read her ----- --- but I could not figure out which mood she was in.",
+					"tip": ""
+				},
+				{
+					"answer": "concise",
+					"question": "The new English dictionary is very --.",
+					"tip": ""
+				},
+				{
+					"answer": "stall",
+					"question": "The ---- in the market square mainy sold clothes.",
+					"tip": ""
+				},
+				{
+					"answer": "steel drum band",
+					"question": "The ---- --- --- played a tune by Bob Marley.",
+					"tip": ""
+				},
+				{
+					"answer": "to bleed",
+					"question": "My nose started ---- immediately.",
+					"tip": ""
+				},
+				{
+					"answer": "to look for trouble",
+					"question": "Some hooligans were looking for trouble after the game.",
+					"tip": ""
+				},
+				{
+					"answer": "to get involved",
+					"question": "It is really rewarding to ------- in charity project.",
+					"tip": ""
+				},
+				{
+					"answer": "regeneration",
+					"question": "Local ---- schemes don't always work.",
+					"tip": ""
+				},
+				{
+					"answer": "influx",
+					"question": "The ---- of tourists during the summer is enormous.",
+					"tip": ""
+				},
+				{
+					"answer": "to weave",
+					"question": ".----- has been practised for thousands of years.",
+					"tip": ""
+				},
+				{
+					"answer": "persecution",
+					"question": "In the 16th century many people in Europe suffered from religious -----.",
+					"tip": ""
+				},
+				{
+					"answer": "run-of-the-mill",
+					"question": "The chairs are just ---------- pieces.",
+					"tip": ""
+				},
+				{
+					"answer": "bagel",
+					"question": "On Sunday we had ---- with cream cheese.",
+					"tip": ""
+				},
+				{
+					"answer": "takeaway",
+					"question": "Our fridge was empty so we got our dinner from a Chinese -----.",
+					"tip": ""
+				},
+				{
+					"answer": "bustling",
+					"question": "In the centre there are only a few ----- shopping malls-",
+					"tip": ""
+				},
+				{
+					"answer": "artistic",
+					"question": "The ---- value of his paintings is heavily disputed.",
+					"tip": ""
+				},
+				{
+					"answer": "to be plain to",
+					"question": "It ------------ everyone that that they were having an affair.",
+					"tip": ""
+				},
+				{
+					"answer": "ranking",
+					"question": "Being last, it was hard for them to accept their --------.",
+					"tip": ""
+				},
+				{
+					"answer": "educational achievement",
+					"question": "Among the various ethnic groups there are considerable differences in --------.",
+					"tip": ""
+				},
+				{
+					"answer": "economic stagnation",
+					"question": ".------- -- is often the reason for a rise in unemployment",
+					"tip": ""
+				},
+				{
+					"answer": "drug abuse",
+					"question": ".---- --- is a sign of desperation among the young.",
+					"tip": ""
+				},
+				{
+					"answer": "to be on the rise",
+					"question": "Sadly, the number of drug-releated deaths ---- --- -----.",
+					"tip": ""
+				},
+				{
+					"answer": "illiterate",
+					"question": "That their son was virtually ---- was a big shock",
+					"tip": ""
+				},
+				{
+					"answer": "mosque",
+					"question": "In L.A. a former synagogue was converted into a-----.",
+					"tip": ""
+				},
+				{
+					"answer": "to be determined",
+					"question": "He ----- ---- to finish school soon and get a job.",
+					"tip": ""
+				},
+				{
+					"answer": "to be absorbed into",
+					"question": "They did not want to -- the local culture.",
+					"tip": ""
+				},
+				{
+					"answer": "aspirations",
+					"question": "My own ---- were just to work with horses",
+					"tip": ""
+				},
+				{
+					"answer": "to be reinfoced",
+					"question": "Her fear  ---- ---- by what she read in the paper",
+					"tip": ""
+				},
+				{
+					"answer": "awareness-raising",
+					"question": ".-- programmes should give young people the confidence to take their lives into their own hands.",
+					"tip": ""
+				},
+				{
+					"answer": "to be all the rage",
+					"question": "Fancy hats ---- ---- --- - among the group.",
+					"tip": ""
+				},
+				{
+					"answer": "to hold sb. Up",
+					"question": "He would have collapsed, but his friends ---- him ----.",
+					"tip": ""
+				},
+				{
+					"answer": "harmful",
+					"question": "Nuts can prove to be ---- if you are allergic to them.",
+					"tip": ""
+				},
+				{
+					"answer": "compulsory",
+					"question": "School for children between 10 and 14 is ----.",
+					"tip": ""
+				},
+				{
+					"answer": "to speak up",
+					"question": ".---- ---, or nobody will realise that you have a problem.",
+					"tip": ""
+				},
+				{
+					"answer": "to curb",
+					"question": "The police often use bumps to ---- speeding",
+					"tip": ""
+				},
+				{
+					"answer": "rarity",
+					"question": "This is one of the -- you can enjoy in this quiet area.",
+					"tip": ""
+				},
+				{
+					"answer": "recreation",
+					"question": "The new theatre is a -- of one from the 1700s.",
+					"tip": ""
+				},
+				{
+					"answer": "to rely on",
+					"question": "The company heavily ---- --- her help as a manager.",
+					"tip": ""
+				},
+				{
+					"answer": "newcomer",
+					"question": "As a ---- in this field, I had a lot to learn.",
+					"tip": ""
+				},
+				{
+					"answer": "language initiative",
+					"question": "One of their fist measures was to set up a ----- and introduce language classes for adults.",
+					"tip": ""
+				},
+				{
+					"answer": "integration",
+					"question": ".----- is one of the challenges for the next decade.",
+					"tip": ""
+				},
+				{
+					"answer": "vibrant",
+					"question": "Their community soon developed a ----- life style",
+					"tip": ""
+				},
+				{
+					"answer": "thrilling",
+					"question": "I recommend Brown's new novel- it's really ------!",
+					"tip": ""
+				},
+				{
+					"answer": "with respect to",
+					"question": ". ----- ---- his plan I must admit that it's very clever.",
+					"tip": ""
+				},
+				{
+					"answer": "to get by",
+					"question": "The visitors thought they could --- -- without paying.",
+					"tip": ""
+				},
+				{
+					"answer": "sufficient",
+					"question": "There is not -- evidence that this was an accident.",
+					"tip": ""
+				},
+				{
+					"answer": "hesitation",
+					"question": "He jumped into the ice-cold water without -----",
+					"tip": ""
+				},
+				{
+					"answer": "circumlocation",
+					"question": "This passage is a good example of ---- without being too indirect.",
+					"tip": ""
+				},
+				{
+					"answer": "current events",
+					"question": ".---- are not main focus of this magazine.",
+					"tip": ""
+				},
+				{
+					"answer": "to make one's own decisions",
+					"question": "It is importaint for a child ---.",
+					"tip": ""
+				},
+				{
+					"answer": "way of live",
+					"question": "Change your --- ---- --- now if you want to stay healthy!",
+					"tip": ""
+				},
+				{
+					"answer": "to arrange a marriage",
+					"question": "Their ---- ---- ---- ---- --- by their parents.",
+					"tip": ""
+				},
+				{
+					"answer": "to force sb. To do sth.",
+					"question": "My parents ---- ---- -- -- to England when I was 15",
+					"tip": ""
+				},
+				{
+					"answer": "to give in to",
+					"question": "I won't ------ --- this bully, so please stop bothering me.",
+					"tip": ""
+				},
+				{
+					"answer": "feature",
+					"question": "In his magazine he ---- three representatives of NGOs. There were even some home stories on them.",
+					"tip": ""
+				},
+				{
+					"answer": "to feel strongly about sth.",
+					"question": "I really ------ the privileges that I could not share.",
+					"tip": ""
+				}
+			]
+
+		var tasks2 =
 			[
 				{
 					"answer": "Bolt",
@@ -1223,7 +2207,7 @@
 			}
 		}
 
-		document.getElementById("myQuestion").innerHTML = thisTask.question 
+		document.getElementById("myQuestion").innerHTML = thisTask.question
 
 
 
