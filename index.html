@@ -2669,10 +2669,10 @@
 				}
 
 			];
-		var myInput = document.getElementById("MyInput");
+		const myInput = document.getElementById("Myinput");
+		const which = Math.floor(Math.random() * tasks.length);
+		const thisTask = tasks[which];
 
-		let which = Math.floor(Math.random() * tasks.length);
-		var thisTask = tasks[which];
 		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
 
 		function getInputValue() {
@@ -2681,14 +2681,12 @@
 				window.location.reload()
 			} else {
 				document.getElementById("error").innerHTML = "Esta mal!!! Inténtalo otra vez";
-
 			}
 		}
 
 		document.getElementById("myQuestion").innerHTML = thisTask.question
 
 		myInput.select();
-
 	</script>
 
 	<div style="font-size: 70px; color: crimson;" id="error"></div>
