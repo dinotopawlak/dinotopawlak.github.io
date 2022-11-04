@@ -2,25 +2,21 @@
 <html style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
 
 <head>
-
 	<meta charset="UTF-8">
-
 </head>
 
 <body>
-
 	<p id="myQuestion"></p>
 
+    <!--return false to prevent reloading-->
+	<form onsubmit="getInputValue(); return false">
+		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
+		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
+		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
+		<br>
+	</form>
 
-	<label style="font-size:20px" for="name"> Hier das gewünschte Wort schreiben:</label>
-
-	<input type="text" style="height:23px;font-size:20px" id="Myinput">
-
-	<button type="button" style="height:40px;font-size:20px" id="Antwortbutton"
-		onclick="getInputValue()">Submit</button>
-	<br>
 	<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>
-
 	<script>
 
 		var tasks =
@@ -2673,21 +2669,16 @@
 				}
 
 			];
+		var myInput = document.getElementById("MyInput");
 
 		let which = Math.floor(Math.random() * tasks.length);
 		var thisTask = tasks[which];
 		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
 
-
-		let richtigWort = thisTask.answer;
-
-
 		function getInputValue() {
-			var inputVar = document.getElementById("Myinput").value;
-
-			if (inputVar === richtigWort) {
+			if (myInput.value === thisTask.answer) {
 				alert("Muy bien =)");
-				location.href = location.href
+				window.location.reload()
 			} else {
 				document.getElementById("error").innerHTML = "Esta mal!!! Inténtalo otra vez";
 
@@ -2696,21 +2687,7 @@
 
 		document.getElementById("myQuestion").innerHTML = thisTask.question
 
-
-
-
-		var input = document.getElementById("Myinput");
-		input.addEventListener("keypress", function (event) {
-			if (event.key === "Enter") {
-				// Cancel the default action, if needed
-				event.preventDefault();
-				// Trigger the button element with a click
-				document.getElementById("Antwortbutton").click();
-			}
-		});
-
-		var inputVar = document.getElementById("Myinput");
-		inputVar.select();
+		myInput.select();
 
 	</script>
 
@@ -2718,5 +2695,4 @@
 
 
 </body>
-
 </html>
