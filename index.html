@@ -19,7 +19,7 @@
 
 	<!---<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
 
-	<button style="height:30px" onclick="help()">Solution</button>
+	<button style="height:30px" onclick=alert(thisTask.answer)>Solution</button>
 	<script>
 		var tasks = [
 			{
@@ -5347,14 +5347,10 @@
 
 		myInput.select();
 
-	
+		}
 	</script>
 
 	<div style="font-size: 70px; color: crimson;" id="error"></div>
-
-	function help() {
-		window.alert(thisTask.answer)
-	}
 
 
 </body>
