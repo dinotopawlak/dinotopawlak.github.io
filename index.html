@@ -13,13 +13,12 @@
 		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
 		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
 		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
-
+		<button> type="text" id="Hilfe"</button>
 		<br>
 	</form>
 
-	<!---<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
-
-	<button style="height:30px" onclick=alert(thisTask.answer)>Solution</button>
+	<!--<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
+	<button style="height:30px" onclick=document.getElementbyId(thisTask.answer)>Solution</button>
 	<script>
 		var tasks = [
 			{
@@ -5330,7 +5329,7 @@
 		const myInput = document.getElementById("Myinput");
 		const which = Math.floor(Math.random() * tasks.length);
 		const thisTask = tasks[which];
-		
+	
 		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
 
 		function getInputValue() {
@@ -5344,10 +5343,9 @@
 
 		document.getElementById("myQuestion").innerHTML = thisTask.question
 		
+		
 
 		myInput.select();
-
-		}
 	</script>
 
 	<div style="font-size: 70px; color: crimson;" id="error"></div>
