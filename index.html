@@ -13,12 +13,14 @@
 		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
 		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
 		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
-		<button> type="text" id="Hilfe"</button>
+
 		<br>
 	</form>
 
 	<!--<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
-	<button style="height:30px" onclick=document.getElementbyId(thisTask.answer)>Solution</button>
+	<br>
+
+	<button style="height:40px; width:900px" onclick="help()">Solution</button>
 	<script>
 		var tasks = [
 			{
@@ -1530,7 +1532,9 @@
 				"question": ".----- that were imposed on South Africa helped to end Apartheid."
 			}
 		]
+
 		/*
+
 				var tasks = [
 		  {
 			"answer": "poisonous",
@@ -5325,11 +5329,13 @@
 						}
 		
 					];
+					
 		*/
+
 		const myInput = document.getElementById("Myinput");
 		const which = Math.floor(Math.random() * tasks.length);
 		const thisTask = tasks[which];
-	
+		let countSolution = 0
 		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
 
 		function getInputValue() {
@@ -5342,14 +5348,34 @@
 		}
 
 		document.getElementById("myQuestion").innerHTML = thisTask.question
-		
-		
+
+
 
 		myInput.select();
+		function help() {
+			//window.alert(thisTask.answer)
+			countSolution = countSolution + 1
+			let solution = ""
+			const stringlength = thisTask.answer.length
+			if (countSolution > 1) {
+				solution = thisTask.answer
+			} else {
+				for (let i = 0; i < stringlength; i++) {
+					if (i < countSolution) {
+						solution = solution + thisTask.answer.charAt(i)
+					} else {
+						solution = solution + "*"
+					}
+
+				}
+			}
+			document.getElementById("help").innerHTML = solution
+		}
+
 	</script>
 
 	<div style="font-size: 70px; color: crimson;" id="error"></div>
-
+	<div style="font-size: 60px; color:black;" id="help"></div>
 
 </body>
 
