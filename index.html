@@ -19,7 +19,7 @@
 
 	<!---<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
 
-	<button style="height:30px" onclick=alert(thisTask.answer)>Solution</button>
+	<button style="height:30px" onclick="help()">Solution</button>
 	<script>
 		var tasks = [
 			{
@@ -5330,7 +5330,7 @@
 		const myInput = document.getElementById("Myinput");
 		const which = Math.floor(Math.random() * tasks.length);
 		const thisTask = tasks[which];
-	
+		
 		console.log('question: ' + thisTask.question + '\nanswer: ' + thisTask.answer + '\ntip: ' + thisTask.tip);
 
 		function getInputValue() {
@@ -5344,12 +5344,17 @@
 
 		document.getElementById("myQuestion").innerHTML = thisTask.question
 		
-		
 
 		myInput.select();
+
+		function help() {
+		window.alert(thisTask.answer)
+	}
+		}
 	</script>
 
 	<div style="font-size: 70px; color: crimson;" id="error"></div>
+
 
 
 </body>
