@@ -1,3 +1,4 @@
+/*
 [
 			{
 				"answer": "log on",
@@ -1508,4 +1509,574 @@
 				"question": ".----- that were imposed on South Africa helped to end Apartheid."
 			}
 		]
-
+		*/
+		[
+			{
+			  "answer": "genius",
+			  "question": "M. Alcott claimed that talent wasn't -----."
+			},
+			{
+			  "answer": "inspiration",
+			  "question": "He is real ----- to me."
+			},
+			{
+			  "answer": "Perspiration",
+			  "question": ".----- is regulated by the nervous system."
+			},
+			{
+			  "answer": "light bulb",
+			  "question": "The ---- on the ceiling flickered and went out."
+			},
+			{
+			  "answer": "Accordingly",
+			  "question": ".-------, we cannot accept that."
+			},
+			{
+			  "answer": "skip school",
+			  "question": "Many students who ---- regularly say they find lessons boring."
+			},
+			{
+			  "answer": "deadline",
+			  "question": "The ---- is next Monday."
+			},
+			{
+			  "answer": "absorbing",
+			  "question": "The project is so ----."
+			},
+			{
+			  "answer": "salary",
+			  "question": "The yearly ---- he was offered by our competitior made him leave our company."
+			},
+			{
+			  "answer": "over-achiever",
+			  "question": "I am not an ------."
+			},
+			{
+			  "answer": "goes the extra mile",
+			  "question": "Bob always ----- when studying for tests."
+			},
+			{
+			  "answer": "exceeded my own expectations",
+			  "question": "When I finished the project I ----------."
+			},
+			{
+			  "answer": "chilling out",
+			  "question": "I prefer ----- to working out."
+			},
+			{
+			  "answer": "work out",
+			  "question": "to -----= to exercise, to practise sports"
+			},
+			{
+			  "answer": "animator",
+			  "question": "He always dreamed of working as an ----- in L.A."
+			},
+			{
+			  "answer": "vital",
+			  "question": "Patience is ---- if you want to become a doctor."
+			},
+			{
+			  "answer": "trustworthy",
+			  "question": "We are looking for a ---- driver."
+			},
+			{
+			  "answer": "reliable",
+			  "question": "We are looking for a ---- and kind household help."
+			},
+			{
+			  "answer": "carvers",
+			  "question": "Some --- use wood as well as stone for their work."
+			},
+			{
+			  "answer": "globetrotter",
+			  "question": "My cousin's a real --------."
+			},
+			{
+			  "answer": "employer",
+			  "question": "My ---- is Dr Smith."
+			},
+			{
+			  "answer": "school leaver",
+			  "question": "Every ---- should get a job."
+			},
+			{
+			  "answer": "ability to learn",
+			  "question": ".------ = to be able to learn. (what an amazing explanation)"
+			},
+			{
+			  "answer": "Teamwork",
+			  "question": ".---- is becoming more and more important."
+			},
+			{
+			  "answer": "Self-management",
+			  "question": ".------ is an important skill in the workplace."
+			},
+			{
+			  "answer": "initiative",
+			  "question": "It was on his --- that they started the project."
+			},
+			{
+			  "answer": "enterprise",
+			  "question": "Google has turned into a multinational -----."
+			},
+			{
+			  "answer": "employable",
+			  "question": "How ---- are you?"
+			},
+			{
+			  "answer": "Employees",
+			  "question": ".----- of the firm about to be closed went on strike."
+			},
+			{
+			  "answer": "provide information",
+			  "question": "If you'd like me to invest in your project you need to ----- more ---- first."
+			},
+			{
+			  "answer": "carry out instructions",
+			  "question": "Don't wait to be told to ------. Show some initiative!"
+			},
+			{
+			  "answer": "standing around",
+			  "question": "Don't let the boss see you ---- doing nothing."
+			},
+			{
+			  "answer": "to be told what to do",
+			  "question": "She always needs to --------. I wish she would show more initiative."
+			},
+			{
+			  "answer": "adjust work procedures",
+			  "question": "In your new job you will have to ------."
+			},
+			{
+			  "answer": "take action",
+			  "question": "You will also have to ------."
+			},
+			{
+			  "answer": "According to",
+			  "question": ".----- the rules you'll have to wear a suit and tie."
+			},
+			{
+			  "answer": "time frame",
+			  "question": "It is important that you stay within the ----."
+			},
+			{
+			  "answer": "ensure",
+			  "question": "Please ----- that you are on time."
+			},
+			{
+			  "answer": "efficiently",
+			  "question": "Doing things ----- is doing things right."
+			},
+			{
+			  "answer": "effectively",
+			  "question": "Doing things ----- is doing the right things."
+			},
+			{
+			  "answer": "rely on",
+			  "question": "You can always ---- me."
+			},
+			{
+			  "answer": "Updating one's knowledge",
+			  "question": ".----- is essential in every life phase."
+			},
+			{
+			  "answer": "Adapting to changes",
+			  "question": ".------ gets harder when you get older."
+			},
+			{
+			  "answer": "is experienced in",
+			  "question": "She ----- leading projects."
+			},
+			{
+			  "answer": "am skilled at",
+			  "question": "I ------ new technologies."
+			},
+			{
+			  "answer": "gain an understanding of",
+			  "question": "He tries to ----- the complex process."
+			},
+			{
+			  "answer": "develop my strengths",
+			  "question": "I try to ---- in computing."
+			},
+			{
+			  "answer": "widens my horizon",
+			  "question": "I find that travelling really --------."
+			},
+			{
+			  "answer": "fetch",
+			  "question": "One moment, I'll --- him."
+			},
+			{
+			  "answer": "hang on a moment",
+			  "question": "Please, ------."
+			},
+			{
+			  "answer": "extension",
+			  "question": "Ms Herbert's ------ is 405."
+			},
+			{
+			  "answer": "put through",
+			  "question": "I'll --- you --- to Mr Kline"
+			},
+			{
+			  "answer": "hold the line",
+			  "question": "Could you please ------?"
+			},
+			{
+			  "answer": "is not available",
+			  "question": "Sorry, she -------."
+			},
+			{
+			  "answer": "engaged",
+			  "question": "Sorry, the line is -----."
+			},
+			{
+			  "answer": "enquire about",
+			  "question": "Please ----- the departure details."
+			},
+			{
+			  "answer": "ring back later",
+			  "question": "Sure, no problem. I will -------."
+			},
+			{
+			  "answer": "convenient",
+			  "question": "What time would be ---------?"
+			},
+			{
+			  "answer": "reception",
+			  "question": "The --- in this valley is really bad."
+			},
+			{
+			  "answer": "was cut off",
+			  "question": "Sorry, the line -------."
+			},
+			{
+			  "answer": "speak up a bit",
+			  "question": "Excuse me, could you -------?"
+			},
+			{
+			  "answer": "bear with me for a moment",
+			  "question": "I would ask you to ------ me --------."
+			},
+			{
+			  "answer": "fire away",
+			  "question": "OK, please ------."
+			},
+			{
+			  "answer": "VAT",
+			  "question": "How much ---- do you have to pay in the US?"
+			},
+			{
+			  "answer": "invoice",
+			  "question": "Please send the ---- back to us."
+			},
+			{
+			  "answer": "accounts department",
+			  "question": "He works in the ------."
+			},
+			{
+			  "answer": "minutes",
+			  "question": "Who is writing the ---- today?"
+			},
+			{
+			  "answer": "private purposes",
+			  "question": "School computers must not be used for -----."
+			},
+			{
+			  "answer": "meeting scheduled",
+			  "question": "The ---- is --- for Wednesday."
+			},
+			{
+			  "answer": "postponed",
+			  "question": "Our boss was late, so the meeting had to be -----."
+			},
+			{
+			  "answer": "connectives",
+			  "question": "However, but, etc. are ------."
+			},
+			{
+			  "answer": "monotonous",
+			  "question": "His voice is -----."
+			},
+			{
+			  "answer": "address the audience",
+			  "question": "You should ---- directly and not talk to yourself."
+			},
+			{
+			  "answer": "Involve",
+			  "question": ".----- people from the audience!"
+			},
+			{
+			  "answer": "corporate culture",
+			  "question": "Their ---- is a disaster."
+			},
+			{
+			  "answer": "enhance",
+			  "question": "You should ---- your training schemes further."
+			},
+			{
+			  "answer": "core values",
+			  "question": "The ---- of our company are summarised in that folder."
+			},
+			{
+			  "answer": "hierarchy",
+			  "question": "There's no ---- among us students, I guess."
+			},
+			{
+			  "answer": "collaborative environment",
+			  "question": "Our aim is to create a rich -------."
+			},
+			{
+			  "answer": "integrity",
+			  "question": "One's personal ---- should never be violated."
+			},
+			{
+			  "answer": "accesible",
+			  "question": "The university has made ist library more ----."
+			},
+			{
+			  "answer": "is related to",
+			  "question": "This problem --- closely ----- one we already had."
+			},
+			{
+			  "answer": "hires",
+			  "question": "This company ----- around 20 new employees a year."
+			},
+			{
+			  "answer": "traits",
+			  "question": "His character ---- are very positive."
+			},
+			{
+			  "answer": "flexible",
+			  "question": "Today workers have to be ---- and adaptable."
+			},
+			{
+			  "answer": "adaptable",
+			  "question": "His team is highly ------."
+			},
+			{
+			  "answer": "determine",
+			  "question": "It's not easy to ----- the causes."
+			},
+			{
+			  "answer": "Academics",
+			  "question": ".---- are much more important to him than sports."
+			},
+			{
+			  "answer": "credentials",
+			  "question": "Her ----- are extraordinary."
+			},
+			{
+			  "answer": "theoretical",
+			  "question": "This is just a ---- question."
+			},
+			{
+			  "answer": "Obviously",
+			  "question": ".--- something went wrong."
+			},
+			{
+			  "answer": "annual",
+			  "question": "We have a --- family meeting."
+			},
+			{
+			  "answer": "stock options",
+			  "question": "Some companies offer ----- to their employees."
+			},
+			{
+			  "answer": "increase salaries",
+			  "question": "to ----- != to decrease salaries"
+			},
+			{
+			  "answer": "perk",
+			  "question": ".---- = benefit, advantage"
+			},
+			{
+			  "answer": "headquarters",
+			  "question": "The UN ----- is/are in New York."
+			},
+			{
+			  "answer": "work-life balance",
+			  "question": "We all want to achieve a better --------."
+			},
+			{
+			  "answer": "paternity leave",
+			  "question": "More men take the chance to go on ----- now."
+			},
+			{
+			  "answer": "spouse",
+			  "question": "The president will visit China with his -----."
+			},
+			{
+			  "answer": "reimburse",
+			  "question": "We ---- you 90$ if you buy that TV."
+			},
+			{
+			  "answer": "Hybrid cars",
+			  "question": ".--- are becoming more popular."
+			},
+			{
+			  "answer": "shuttle service",
+			  "question": "The hotel has a ------."
+			},
+			{
+			  "answer": "commuters",
+			  "question": "In the morning the trains are always full of -----."
+			},
+			{
+			  "answer": "wage",
+			  "question": "The minimum ----- is 7.25 $ an hour."
+			},
+			{
+			  "answer": "White-collar workers",
+			  "question": ".------- have office jobs."
+			},
+			{
+			  "answer": "blue-collar worker",
+			  "question": "He used to be a ------, but now he works at an office."
+			},
+			{
+			  "answer": "career development",
+			  "question": "What's your ----- plan?"
+			},
+			{
+			  "answer": "skills training",
+			  "question": "Language ---- includes listening, writing, etc."
+			},
+			{
+			  "answer": "available on call",
+			  "question": "Our staff is ------."
+			},
+			{
+			  "answer": "linguistic skills",
+			  "question": "We are looking for a communicative person with highly developed -------. (so probably not me)"
+			},
+			{
+			  "answer": "assessment procedures",
+			  "question": "The new ----- will be explained soon."
+			},
+			{
+			  "answer": "social skills",
+			  "question": "His ---- are exellent."
+			},
+			{
+			  "answer": "reputation",
+			  "question": "This company has a bad ------."
+			},
+			{
+			  "answer": "chair the meeting",
+			  "question": "This year Mr Carmona will ----- at the conference."
+			},
+			{
+			  "answer": "take the minutes",
+			  "question": "Are you sure it's really my turn to ---- again?"
+			},
+			{
+			  "answer": "agenda",
+			  "question": "What's on the ----- today?"
+			},
+			{
+			  "answer": "subsidiaries",
+			  "question": "Siemens has worldwide -------."
+			},
+			{
+			  "answer": "executive board",
+			  "question": "The ---- has agreed."
+			},
+			{
+			  "answer": "liberal",
+			  "question": "Google and Microsoft have very ---- corporate cultures."
+			},
+			{
+			  "answer": "labour force",
+			  "question": "The Austrian ----- is generally well qualified."
+			},
+			{
+			  "answer": "Relocation",
+			  "question": ".----- of manufacturing towards the East is quite common these days."
+			},
+			{
+			  "answer": "abolition",
+			  "question": "We will not support the ----- of time recording."
+			},
+			{
+			  "answer": "Overtime",
+			  "question": ".---- pay is regulated individually."
+			},
+			{
+			  "answer": "Time recording",
+			  "question": ".---- of workers has become quite common."
+			},
+			{
+			  "answer": "company premises",
+			  "question": "Entrance to the ------ is not allowed."
+			},
+			{
+			  "answer": "re on first name terms",
+			  "question": "I'm glad we'---------. It's a lot less formal."
+			},
+			{
+			  "answer": "ruthless",
+			  "question": "He proved to be a ----- driver."
+			},
+			{
+			  "answer": "insensitivity",
+			  "question": "It's difficult for me to tolerate -----."
+			},
+			{
+			  "answer": "fierce",
+			  "question": "There was a --- opposition to the cutbacks."
+			},
+			{
+			  "answer": "cut cost",
+			  "question": "Managers said they needed to ---- by up to 30%."
+			},
+			{
+			  "answer": "consider",
+			  "question": "Please ----- the fact that this is impossible to me."
+			},
+			{
+			  "answer": "walking distance",
+			  "question": "It's within ------."
+			},
+			{
+			  "answer": "drudgery",
+			  "question": "The invention of the washing machine has helped me to lessen  the ---- of housework immensely."
+			},
+			{
+			  "answer": "fades",
+			  "question": "Our childhood ----- in our memory."
+			},
+			{
+			  "answer": "futurologists",
+			  "question": "What are the views of -----?"
+			},
+			{
+			  "answer": "exodus",
+			  "question": "In Europe there is an ------ of young scientists to the US."
+			},
+			{
+			  "answer": "blurred",
+			  "question": "verschwimmen"
+			},
+			{
+			  "answer": "drew up",
+			  "question": "We quickly ----- a plan to get out of this mess."
+			},
+			{
+			  "answer": "Cyber attacks",
+			  "question": ".---- on hospitals are a real danger to patients."
+			},
+			{
+			  "answer": "hologram",
+			  "question": "A ---- is a 3D image on a 2D surface."
+			},
+			{
+			  "answer": "polarisation",
+			  "question": "There is a deep ---- between political parties."
+			},
+			{
+			  "answer": "proliferation",
+			  "question": "The --- of nuclear weapons should be stopped."
+			}
+		  ]
