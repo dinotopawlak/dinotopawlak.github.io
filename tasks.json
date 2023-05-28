@@ -1,570 +1,470 @@
-		[
-			{
-				"answer": "genius",
-				"question": "M. Alcott claimed that talent wasn't -----."
-			},
-			{
-				"answer": "inspiration",
-				"question": "He is real ----- to me."
-			},
-			{
-				"answer": "Perspiration",
-				"question": ".----- is regulated by the nervous system."
-			},
-			{
-				"answer": "light bulb",
-				"question": "The ---- on the ceiling flickered and went out."
-			},
-			{
-				"answer": "Accordingly",
-				"question": ".-------, we cannot accept that."
-			},
-			{
-				"answer": "skip school",
-				"question": "Many students who ---- regularly say they find lessons boring."
-			},
-			{
-				"answer": "deadline",
-				"question": "The ---- is next Monday."
-			},
-			{
-				"answer": "absorbing",
-				"question": "The project is so ----."
-			},
-			{
-				"answer": "salary",
-				"question": "The yearly ---- he was offered by our competitior made him leave our company."
-			},
-			{
-				"answer": "over-achiever",
-				"question": "I am not an ------."
-			},
-			{
-				"answer": "goes the extra mile",
-				"question": "Bob always ----- when studying for tests."
-			},
-			{
-				"answer": "exceeded my own expectations",
-				"question": "When I finished the project I ----------."
-			},
-			{
-				"answer": "chilling out",
-				"question": "I prefer ----- to working out."
-			},
-			{
-				"answer": "work out",
-				"question": "to -----= to exercise, to practise sports"
-			},
-			{
-				"answer": "animator",
-				"question": "He always dreamed of working as an ----- in L.A."
-			},
-			{
-				"answer": "vital",
-				"question": "Patience is ---- if you want to become a doctor."
-			},
-			{
-				"answer": "trustworthy",
-				"question": "We are looking for a ---- driver."
-			},
-			{
-				"answer": "reliable",
-				"question": "We are looking for a ---- and kind household help."
-			},
-			{
-				"answer": "carvers",
-				"question": "Some --- use wood as well as stone for their work."
-			},
-			{
-				"answer": "globetrotter",
-				"question": "My cousin's a real --------."
-			},
-			{
-				"answer": "employer",
-				"question": "My ---- is Dr Smith."
-			},
-			{
-				"answer": "school leaver",
-				"question": "Every ---- should get a job."
-			},
-			{
-				"answer": "ability to learn",
-				"question": ".------ = to be able to learn. (what an amazing explanation)"
-			},
-			{
-				"answer": "Teamwork",
-				"question": ".---- is becoming more and more important."
-			},
-			{
-				"answer": "Self-management",
-				"question": ".------ is an important skill in the workplace."
-			},
-			{
-				"answer": "initiative",
-				"question": "It was on his --- that they started the project."
-			},
-			{
-				"answer": "enterprise",
-				"question": "Google has turned into a multinational -----."
-			},
-			{
-				"answer": "employable",
-				"question": "How ---- are you?"
-			},
-			{
-				"answer": "Employees",
-				"question": ".----- of the firm about to be closed went on strike."
-			},
-			{
-				"answer": "provide information",
-				"question": "If you'd like me to invest in your project you need to ----- more ---- first."
-			},
-			{
-				"answer": "carry out instructions",
-				"question": "Don't wait to be told to ------. Show some initiative!"
-			},
-			{
-				"answer": "standing around",
-				"question": "Don't let the boss see you ---- doing nothing."
-			},
-			{
-				"answer": "be told what to do",
-				"question": "She always needs to --------. I wish she would show more initiative."
-			},
-			{
-				"answer": "adjust work procedures",
-				"question": "In your new job you will have to ------."
-			},
-			{
-				"answer": "take action",
-				"question": "You will also have to ------."
-			},
-			{
-				"answer": "According to",
-				"question": ".----- the rules you'll have to wear a suit and tie."
-			},
-			{
-				"answer": "time frame",
-				"question": "It is important that you stay within the ----."
-			},
-			{
-				"answer": "ensure",
-				"question": "Please ----- that you are on time."
-			},
-			{
-				"answer": "efficiently",
-				"question": "Doing things ----- is doing things right."
-			},
-			{
-				"answer": "effectively",
-				"question": "Doing things ----- is doing the right things."
-			},
-			{
-				"answer": "rely on",
-				"question": "You can always ---- me."
-			},
-			{
-				"answer": "Updating one's knowledge",
-				"question": ".----- is essential in every life phase."
-			},
-			{
-				"answer": "Adapting to changes",
-				"question": ".------ gets harder when you get older."
-			},
-			{
-				"answer": "is experienced in",
-				"question": "She ----- leading projects."
-			},
-			{
-				"answer": "am skilled at",
-				"question": "I ------ new technologies."
-			},
-			{
-				"answer": "gain an understanding of",
-				"question": "He tries to ----- the complex process."
-			},
-			{
-				"answer": "develop my strengths",
-				"question": "I try to ---- in computing."
-			},
-			{
-				"answer": "widens my horizon",
-				"question": "I find that travelling really --------."
-			},
-			{
-				"answer": "fetch",
-				"question": "One moment, I'll --- him."
-			},
-			{
-				"answer": "hang on a moment",
-				"question": "Please, ------."
-			},
-			{
-				"answer": "extension",
-				"question": "Ms Herbert's ------ is 405."
-			},
-			{
-				"answer": "put through",
-				"question": "I'll --- you --- to Mr Kline"
-			},
-			{
-				"answer": "hold the line",
-				"question": "Could you please ------?"
-			},
-			{
-				"answer": "is not available",
-				"question": "Sorry, she -------."
-			},
-			{
-				"answer": "engaged",
-				"question": "Sorry, the line is -----."
-			},
-			{
-				"answer": "enquire about",
-				"question": "Please ----- the departure details."
-			},
-			{
-				"answer": "ring back later",
-				"question": "Sure, no problem. I will -------."
-			},
-			{
-				"answer": "convenient",
-				"question": "What time would be ---------?"
-			},
-			{
-				"answer": "reception",
-				"question": "The --- in this valley is really bad."
-			},
-			{
-				"answer": "was cut off",
-				"question": "Sorry, the line -------."
-			},
-			{
-				"answer": "speak up a bit",
-				"question": "Excuse me, could you -------?"
-			},
-			{
-				"answer": "bear with for a moment",
-				"question": "I would ask you to ------ me --------."
-			},
-			{
-				"answer": "fire away",
-				"question": "OK, please ------."
-			},
-			{
-				"answer": "VAT",
-				"question": "How much ---- do you have to pay in the US?"
-			},
-			{
-				"answer": "invoice",
-				"question": "Please send the ---- back to us."
-			},
-			{
-				"answer": "accounts department",
-				"question": "He works in the ------."
-			},
-			{
-				"answer": "minutes",
-				"question": "Who is writing the ---- today?"
-			},
-			{
-				"answer": "private purposes",
-				"question": "School computers must not be used for -----."
-			},
-			{
-				"answer": "meeting scheduled",
-				"question": "The ---- is --- for Wednesday."
-			},
-			{
-				"answer": "postponed",
-				"question": "Our boss was late, so the meeting had to be -----."
-			},
-			{
-				"answer": "connectives",
-				"question": "However, but, etc. are ------."
-			},
-			{
-				"answer": "monotonous",
-				"question": "His voice is -----."
-			},
-			{
-				"answer": "address the audience",
-				"question": "You should ---- directly and not talk to yourself."
-			},
-			{
-				"answer": "Involve",
-				"question": ".----- people from the audience!"
-			},
-			{
-				"answer": "corporate culture",
-				"question": "Their ---- is a disaster."
-			},
-			{
-				"answer": "enhance",
-				"question": "You should ---- your training schemes further."
-			},
-			{
-				"answer": "core values",
-				"question": "The ---- of our company are summarised in that folder."
-			},
-			{
-				"answer": "hierarchy",
-				"question": "There's no ---- among us students, I guess."
-			},
-			{
-				"answer": "collaborative environment",
-				"question": "Our aim is to create a rich -------."
-			},
-			{
-				"answer": "integrity",
-				"question": "One's personal ---- should never be violated."
-			},
-			{
-				"answer": "accessible",
-				"question": "The university has made ist library more ----."
-			},
-			{
-				"answer": "is related to",
-				"question": "This problem --- closely ----- one we already had."
-			},
-			{
-				"answer": "hires",
-				"question": "This company ----- around 20 new employees a year."
-			},
-			{
-				"answer": "traits",
-				"question": "His character ---- are very positive."
-			},
-			{
-				"answer": "flexible",
-				"question": "Today workers have to be ---- and adaptable."
-			},
-			{
-				"answer": "adaptable",
-				"question": "His team is highly ------."
-			},
-			{
-				"answer": "determine",
-				"question": "It's not easy to ----- the causes."
-			},
-			{
-				"answer": "Academics",
-				"question": ".---- are much more important to him than sports."
-			},
-			{
-				"answer": "credentials",
-				"question": "Her ----- are extraordinary."
-			},
-			{
-				"answer": "theoretical",
-				"question": "This is just a ---- question."
-			},
-			{
-				"answer": "Obviously",
-				"question": ".--- something went wrong."
-			},
-			{
-				"answer": "annual",
-				"question": "We have a --- family meeting."
-			},
-			{
-				"answer": "stock options",
-				"question": "Some companies offer ----- to their employees."
-			},
-			{
-				"answer": "increase salaries",
-				"question": "to ----- != to decrease salaries"
-			},
-			{
-				"answer": "perk",
-				"question": ".---- = benefit, advantage"
-			},
-			{
-				"answer": "headquarters",
-				"question": "The UN ----- is/are in New York."
-			},
-			{
-				"answer": "work-life balance",
-				"question": "We all want to achieve a better --------."
-			},
-			{
-				"answer": "paternity leave",
-				"question": "More men take the chance to go on ----- now."
-			},
-			{
-				"answer": "spouse",
-				"question": "The president will visit China with his -----."
-			},
-			{
-				"answer": "reimburse",
-				"question": "We ---- you 90$ if you buy that TV."
-			},
-			{
-				"answer": "Hybrid cars",
-				"question": ".--- are becoming more popular."
-			},
-			{
-				"answer": "shuttle service",
-				"question": "The hotel has a ------."
-			},
-			{
-				"answer": "commuters",
-				"question": "In the morning the trains are always full of -----."
-			},
-			{
-				"answer": "wage",
-				"question": "The minimum ----- is 7.25 $ an hour."
-			},
-			{
-				"answer": "White-collar workers",
-				"question": ".------- have office jobs."
-			},
-			{
-				"answer": "blue-collar worker",
-				"question": "He used to be a ------, but now he works at an office."
-			},
-			{
-				"answer": "career development",
-				"question": "What's your ----- plan?"
-			},
-			{
-				"answer": "skills training",
-				"question": "Language ---- includes listening, writing, etc."
-			},
-			{
-				"answer": "available on call",
-				"question": "Our staff is ------."
-			},
-			{
-				"answer": "linguistic skills",
-				"question": "We are looking for a communicative person with highly developed -------. (so probably not me)"
-			},
-			{
-				"answer": "assessment procedures",
-				"question": "The new ----- will be explained soon."
-			},
-			{
-				"answer": "social skills",
-				"question": "His ---- are exellent."
-			},
-			{
-				"answer": "reputation",
-				"question": "This company has a bad ------."
-			},
-			{
-				"answer": "chair the meeting",
-				"question": "This year Mr Carmona will ----- at the conference."
-			},
-			{
-				"answer": "take the minutes",
-				"question": "Are you sure it's really my turn to ---- again?"
-			},
-			{
-				"answer": "agenda",
-				"question": "What's on the ----- today?"
-			},
-			{
-				"answer": "subsidiaries",
-				"question": "Siemens has worldwide -------."
-			},
-			{
-				"answer": "executive board",
-				"question": "The ---- has agreed."
-			},
-			{
-				"answer": "liberal",
-				"question": "Google and Microsoft have very ---- corporate cultures."
-			},
-			{
-				"answer": "labour force",
-				"question": "The Austrian ----- is generally well qualified."
-			},
-			{
-				"answer": "Relocation",
-				"question": ".----- of manufacturing towards the East is quite common these days."
-			},
-			{
-				"answer": "abolition",
-				"question": "We will not support the ----- of time recording."
-			},
-			{
-				"answer": "Overtime",
-				"question": ".---- pay is regulated individually."
-			},
-			{
-				"answer": "Time recording",
-				"question": ".---- of workers has become quite common."
-			},
-			{
-				"answer": "company premises",
-				"question": "Entrance to the ------ is not allowed."
-			},
-			{
-				"answer": "re on first name terms",
-				"question": "I'm glad we'---------. It's a lot less formal."
-			},
-			{
-				"answer": "ruthless",
-				"question": "He proved to be a ----- driver."
-			},
-			{
-				"answer": "insensitivity",
-				"question": "It's difficult for me to tolerate -----."
-			},
-			{
-				"answer": "fierce",
-				"question": "There was a --- opposition to the cutbacks."
-			},
-			{
-				"answer": "cut cost",
-				"question": "Managers said they needed to ---- by up to 30%."
-			},
-			{
-				"answer": "consider",
-				"question": "Please ----- the fact that this is impossible to me."
-			},
-			{
-				"answer": "walking distance",
-				"question": "It's within ------."
-			},
-			{
-				"answer": "drudgery",
-				"question": "The invention of the washing machine has helped me to lessen  the ---- of housework immensely."
-			},
-			{
-				"answer": "fades",
-				"question": "Our childhood ----- in our memory."
-			},
-			{
-				"answer": "futurologists",
-				"question": "What are the views of -----?"
-			},
-			{
-				"answer": "exodus",
-				"question": "In Europe there is an ------ of young scientists to the US."
-			},
-			{
-				"answer": "blurred",
-				"question": "verschwommen"
-			},
-			{
-				"answer": "drew up",
-				"question": "We quickly ----- a plan to get out of this mess."
-			},
-			{
-				"answer": "Cyber attacks",
-				"question": ".---- on hospitals are a real danger to patients."
-			},
-			{
-				"answer": "hologram",
-				"question": "A ---- is a 3D image on a 2D surface."
-			},
-			{
-				"answer": "polarisation",
-				"question": "There is a deep ---- between political parties."
-			},
-			{
-				"answer": "proliferation",
-				"question": "The --- of nuclear weapons should be stopped."
-			}
-		]
+[
+	{
+	  "question": "militaris m./f., militare n., militaris:",
+	  "answer": "milit�risch"
+	},
+	{
+	  "question": "ventus, i m.",
+	  "answer": "Wind"
+	},
+	{
+	  "question": "situs, us m.",
+	  "answer": "Lage, Stellung"
+	},
+	{
+	  "question": "situs",
+	  "answer": "gelegen"
+	},
+	{
+	  "question": "aliqui, aliqua, aliquod",
+	  "answer": "irgendein, irgendeine, irgendein"
+	},
+	{
+	  "question": "sol, solis m.",
+	  "answer": "Sonne"
+	},
+	{
+	  "question": "praetor, praetoris m.",
+	  "answer": "Pr�tor, Statthalter"
+	},
+	{
+	  "question": "mensis, mensis m.",
+	  "answer": "Monat"
+	},
+	{
+	  "question": "extra",
+	  "answer": "au�er, ohne, �ber-hinaus"
+	},
+	{
+	  "question": "conspicari 1, conspicor, conspicatus sum",
+	  "answer": "erblicken, wahrnehmen"
+	},
+	{
+	  "question": "ver, veris n.",
+	  "answer": "Fr�hling"
+	},
+	{
+	  "question": "admovere 2, admoveo, admovi, admotum",
+	  "answer": "ann�hern, heranbringen"
+	},
+	{
+	  "question": "oppidum, i n.",
+	  "answer": "Siedlung"
+	},
+	{
+	  "question": "magistratus, us m.",
+	  "answer": "Amt, Beh�rde, Beamter"
+	},
+	{
+	  "question": "eques, equitis m.",
+	  "answer": "Reiter, Ritter"
+	},
+	{
+	  "question": "reliquus 3",
+	  "answer": "�brig, restlich"
+	},
+	{
+	  "question": "arbitrari 1, arbitror, arbitratus sum",
+	  "answer": "meinen, glauben, halten f�r"
+	},
+	{
+	  "question": "sanctus 3",
+	  "answer": "heilig, ehrw�rdig"
+	},
+	{
+	  "question": "religiosus 3",
+	  "answer": "religi�s, fromm"
+	},
+	{
+	  "question": "aes, aeris n.",
+	  "answer": "Erz, Bronze, Geld"
+	},
+	{
+	  "question": "tollere 3, tollo, sustuli, sublatum",
+	  "answer": "emporheben, wegnehmen"
+	},
+	{
+	  "question": "resistere 3, resisto, restiti",
+	  "answer": "stehen bleiben, wiederstehen"
+	},
+	{
+	  "question": "defendere 3, defendo, defensi, defensum",
+	  "answer": "verteidigen, sch�tzen, abwehren"
+	},
+	{
+	  "question": "conari 1, conor, conatus sum",
+	  "answer": "wagen, versuchen"
+	},
+	{
+	  "question": "ingredi 3M, ingredior, ingressus sum",
+	  "answer": "betreten, beginnen"
+	},
+	{
+	  "question": "adventus, us m.",
+	  "answer": "Ankunft"
+	},
+	{
+	  "question": "surgere, surgo, surrexi, surrectum",
+	  "answer": "sich erheben, aufsteigen"
+	},
+	{
+	  "question": "concurrere 3, concurro, concurri, concursum",
+	  "answer": "zusammenlaufen, zusammentreffen"
+	},
+	{
+	  "question": "loqui 3, loquor, locutus sum",
+	  "answer": "reden, sprechen"
+	},
+	{
+	  "question": "minor, minus, minoris",
+	  "answer": "weniger, kleiner, j�nger"
+	},
+	{
+	  "question": "pessimus 3",
+	  "answer": "der schlechteste"
+	},
+	{
+	  "question": "sacrificare 1, sacrifico, sacrificavi, sacrificatum",
+	  "answer": "opfern"
+	},
+	{
+	  "question": "sicut",
+	  "answer": "so wie, ebenso"
+	},
+	{
+	  "question": "beatus 3",
+	  "answer": "gl�cklich, heilig"
+	},
+	{
+	  "question": "potestas, potestatis f.",
+	  "answer": "Kraft, Einfluss"
+	},
+	{
+	  "question": "anima, ae f.",
+	  "answer": "Atem, Seele"
+	},
+	{
+	  "question": "adorare 1, adoro, adoravi, adoratum",
+	  "answer": "anbeten, anflehen"
+	},
+	{
+	  "question": "furor, furoris m.",
+	  "answer": "Wut, Wahnsinn"
+	},
+	{
+	  "question": "vertere 3, verto, verti, versum",
+	  "answer": "drehen, wenden, sich verwandeln"
+	},
+	{
+	  "question": "caedere 3, caedo, cecidi, caesum",
+	  "answer": "schlagen, t�ten"
+	},
+	{
+	  "question": "profiteri 2, profiteor, professus sum",
+	  "answer": "gestehen, verk�nden"
+	},
+	{
+	  "question": "orare 1, oro, oravi, oratum",
+	  "answer": "bitten, beten"
+	},
+	{
+	  "question": "circumstare 1, circumsto, circumstavi, circumstatum",
+	  "answer": "herumstehen, umzingeln, belagern"
+	},
+	{
+	  "question": "invadere 3, invado, invasi, invasum",
+	  "answer": "eindringen, befallen"
+	},
+	{
+	  "question": "regio, regionis f.",
+	  "answer": "Gebiet, Landschaft"
+	},
+	{
+	  "question": "profisci 3, proficiscor, profectus sum",
+	  "answer": "aufbrechen, (ab)reisen"
+	},
+	{
+	  "question": "fons, fontis m.",
+	  "answer": "Quelle, Ursprung"
+	},
+	{
+	  "question": "sumere 3, sumo, sumpsi, sumptum",
+	  "answer": "nehmen, annehmen, verbrauchen"
+	},
+	{
+	  "question": "cingere 3, cingo, cinxi, cinctum",
+	  "answer": "umg�rten, umgeben"
+	},
+	{
+	  "question": "legio, legionis f.",
+	  "answer": "Legion"
+	},
+	{
+	  "question": "certus 3",
+	  "answer": "gewiss, sicher"
+	},
+	{
+	  "question": "oratio, orationis f.",
+	  "answer": "Rede, Vortrag, Gebet"
+	},
+	{
+	  "question": "praestare 1, praesto, praestiti, praestitum",
+	  "answer": "�bertreffen, gew�hren, sich erweisen"
+	},
+	{
+	  "question": "preastat",
+	  "answer": "es ist besser"
+	},
+	{
+	  "question": "convocare 1, convoco, convocavi, convocatum",
+	  "answer": "zusammenrufen, versammeln"
+	},
+	{
+	  "question": "mora, ae f.",
+	  "answer": "Aufschub, Verz�gerung, Pause"
+	},
+	{
+	  "question": "pietas, pietatis f.",
+	  "answer": "Fr�mmigkeit, Ehrfurcht"
+	},
+	{
+	  "question": "caelum, i n.",
+	  "answer": "Himmel, Wetter"
+	},
+	{
+	  "question": "magnitudo, magnitudinis f",
+	  "answer": "Gr��e"
+	},
+	{
+	  "question": "species, speciei f.",
+	  "answer": "Aussehen, Gestalt"
+	},
+	{
+	  "question": "iacere 2, iaceo, iacui",
+	  "answer": "liegen, ruhen, schlafen"
+	},
+	{
+	  "question": "studere 2, studeo, studui",
+	  "answer": "sich bem�hen, studieren"
+	},
+	{
+	  "question": "ascendere 3, ascendo, ascendi, ascensum",
+	  "answer": "besteigen, hinaufsteigen"
+	},
+	{
+	  "question": "ut mit Indikativ",
+	  "answer": "wie, sobald"
+	},
+	{
+	  "question": "ut mit Konjunktiv",
+	  "answer": "dass, damit, sodass"
+	},
+	{
+	  "question": "mons, montis m.",
+	  "answer": "Berg"
+	},
+	{
+	  "question": "oriri 4, orior, ortus sum",
+	  "answer": "aufstehen, sichtbar werden, enstehen"
+	},
+	{
+	  "question": "forma, ae f.",
+	  "answer": "Form, Aussehen"
+	},
+	{
+	  "question": "arbor, arboris f.",
+	  "answer": "Baum"
+	},
+	{
+	  "question": "doctus 3",
+	  "answer": "gebildet, gelehrt"
+	},
+	{
+	  "question": "probe",
+	  "answer": "nahe bei, vor Kurzem"
+	},
+	{
+	  "question": "hortari 1, hortor, hortatus sum",
+	  "answer": "ermahnen, aufmuntern, auffordern"
+	},
+	{
+	  "question": "egredi 3M, egredior, egressus sum",
+	  "answer": "herausgehen, hinausgehen"
+	},
+	{
+	  "question": "eripere 3M, eripio, eripui, ereptum",
+	  "answer": "entrei�en, retten, herausrei�en"
+	},
+	{
+	  "question": "malum, i n.",
+	  "answer": "�bel, Katastrophe"
+	},
+	{
+	  "question": "motus, us m.",
+	  "answer": "Bewegung, Unruhe"
+	},
+	{
+	  "question": "niger, nigera, nigerum",
+	  "answer": "schwarz, dunkel"
+	},
+	{
+	  "question": "paulum",
+	  "answer": "ein wenig"
+	},
+	{
+	  "question": "fortuna, ae f.",
+	  "answer": "Schicksal, Gl�ck, Verm�gen"
+	},
+	{
+	  "question": "metuere 3, metuo, metui",
+	  "answer": "f�rchten, bef�rchten, sich sorgen um"
+	},
+	{
+	  "question": "somnus, i m.",
+	  "answer": "Schlaf"
+	},
+	{
+	  "question": "ne",
+	  "answer": "dass nicht, damit nicht"
+	},
+	{
+	  "question": "intra",
+	  "answer": "innerhalb, hinein"
+	},
+	{
+	  "question": "munire 4, munio, muniviv, munitum",
+	  "answer": "befestigen, sichern, sch�tzen"
+	},
+	{
+	  "question": "frigidus 3",
+	  "answer": "kalt, frisch"
+	},
+	{
+	  "question": "poscere 3, posco, poposci",
+	  "answer": "fordern, verlangen"
+	},
+	{
+	  "question": "flamma, ae f.",
+	  "answer": "Flamme, Feuer, Leidenschaft"
+	},
+	{
+	  "question": "integer, ra, rum",
+	  "answer": "unversehrt"
+	},
+	{
+	  "question": "similis, simile, similis",
+	  "answer": "�hnlich, gleich"
+	},
+	{
+	  "question": "incognitus 3",
+	  "answer": "unbekannt"
+	},
+	{
+	  "question": "cum",
+	  "answer": "als, w�hrend, nachdem, weil, da, obwohl"
+	},
+	{
+	  "question": "nimium",
+	  "answer": "�berm��ig"
+	},
+	{
+	  "question": "quasi",
+	  "answer": "als ob, wie"
+	},
+	{
+	  "question": "aetas, aetatis f.",
+	  "answer": "Lebensalter, Zeitalter"
+	},
+	{
+	  "question": "coram",
+	  "answer": "�ffentlich vor"
+	},
+	{
+	  "question": "num",
+	  "answer": "etwa, ob"
+	},
+	{
+	  "question": "dubium, i n.",
+	  "answer": "Zweifel"
+	},
+	{
+	  "question": "mirari 1, miror, miratus sum",
+	  "answer": "sich wundern, bewundern"
+	},
+	{
+	  "question": "digredi 3, digredior, digressus sum",
+	  "answer": "fortgehen, sich trennen"
+	},
+	{
+	  "question": "nauta, ae m.",
+	  "answer": "Seemann, Matrose"
+	},
+	{
+	  "question": "religio, religionis f.",
+	  "answer": "religi�ses Empfinden, Verehrung"
+	},
+	{
+	  "question": "contemnere 3, contemno, contempsi, contemptum",
+	  "answer": "verachten"
+	},
+	{
+	  "question": "iocus, i m.",
+	  "answer": "Scherz, Spa�"
+	},
+	{
+	  "question": "quoniam",
+	  "answer": "weil ja, da ja"
+	},
+	{
+	  "question": "vivus 3",
+	  "answer": "lebendig"
+	},
+	{
+	  "question": "saeculum, i n.",
+	  "answer": "Zeitalter, Jahrundert"
+	},
+	{
+	  "question": "eiusmodi",
+	  "answer": "derartig"
+	},
+	{
+	  "question": "potius",
+	  "answer": "eher, lieber, vielmehr"
+	},
+	{
+	  "question": "licentia, ae f.",
+	  "answer": "Freiheit, Erlaubnis"
+	},
+	{
+	  "question": "pontifex, pontificis m.",
+	  "answer": "Priester"
+	},
+	{
+	  "question": "hic",
+	  "answer": "hier"
+	},
+	{
+	  "question": "absens, absentis",
+	  "answer": "abwesend"
+	},
+	{
+	  "question": "anima, ae f.",
+	  "answer": "oder, ob"
+	},
+	{
+	  "question": "nescire 4, nescio, nescivi, nescitum",
+	  "answer": "nicht wissen, nicht verstehen"
+	},
+	{
+	  "question": "innocens, innocentis",
+	  "answer": "unschuldig"
+	},
+	{
+	  "question": "tamquam",
+	  "answer": "gleich wie, als ob"
+	},
+	{
+	  "question": "descendere 3, descendo, descendi, descensum",
+	  "answer": "herabsteigen"
+	}
+  ]
