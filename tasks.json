@@ -1,7 +1,7 @@
 [
 	{
 	  "question": "militaris m./f., militare n., militaris:",
-	  "answer": "milit�risch"
+	  "answer": "militärisch"
 	},
 	{
 	  "question": "ventus, i m.",
@@ -25,7 +25,7 @@
 	},
 	{
 	  "question": "praetor, praetoris m.",
-	  "answer": "Pr�tor, Statthalter"
+	  "answer": "Prätor, Statthalter"
 	},
 	{
 	  "question": "mensis, mensis m.",
@@ -33,7 +33,7 @@
 	},
 	{
 	  "question": "extra",
-	  "answer": "au�er, ohne, �ber-hinaus"
+	  "answer": "außer, ohne, über-hinaus"
 	},
 	{
 	  "question": "conspicari 1, conspicor, conspicatus sum",
@@ -41,11 +41,11 @@
 	},
 	{
 	  "question": "ver, veris n.",
-	  "answer": "Fr�hling"
+	  "answer": "Frühling"
 	},
 	{
 	  "question": "admovere 2, admoveo, admovi, admotum",
-	  "answer": "ann�hern, heranbringen"
+	  "answer": "annähern, heranbringen"
 	},
 	{
 	  "question": "oppidum, i n.",
@@ -53,7 +53,7 @@
 	},
 	{
 	  "question": "magistratus, us m.",
-	  "answer": "Amt, Beh�rde, Beamter"
+	  "answer": "Amt, Behörde, Beamter"
 	},
 	{
 	  "question": "eques, equitis m.",
@@ -61,19 +61,19 @@
 	},
 	{
 	  "question": "reliquus 3",
-	  "answer": "�brig, restlich"
+	  "answer": "übrig, restlich"
 	},
 	{
 	  "question": "arbitrari 1, arbitror, arbitratus sum",
-	  "answer": "meinen, glauben, halten f�r"
+	  "answer": "meinen, glauben, halten für"
 	},
 	{
 	  "question": "sanctus 3",
-	  "answer": "heilig, ehrw�rdig"
+	  "answer": "heilig, ehrwürdig"
 	},
 	{
 	  "question": "religiosus 3",
-	  "answer": "religi�s, fromm"
+	  "answer": "religiös, fromm"
 	},
 	{
 	  "question": "aes, aeris n.",
@@ -89,7 +89,7 @@
 	},
 	{
 	  "question": "defendere 3, defendo, defensi, defensum",
-	  "answer": "verteidigen, sch�tzen, abwehren"
+	  "answer": "verteidigen, schätzen, abwehren"
 	},
 	{
 	  "question": "conari 1, conor, conatus sum",
@@ -117,7 +117,7 @@
 	},
 	{
 	  "question": "minor, minus, minoris",
-	  "answer": "weniger, kleiner, j�nger"
+	  "answer": "weniger, kleiner, jünger"
 	},
 	{
 	  "question": "pessimus 3",
@@ -133,7 +133,7 @@
 	},
 	{
 	  "question": "beatus 3",
-	  "answer": "gl�cklich, heilig"
+	  "answer": "glücklich, heilig"
 	},
 	{
 	  "question": "potestas, potestatis f.",
@@ -157,11 +157,11 @@
 	},
 	{
 	  "question": "caedere 3, caedo, cecidi, caesum",
-	  "answer": "schlagen, t�ten"
+	  "answer": "schlagen, töten"
 	},
 	{
 	  "question": "profiteri 2, profiteor, professus sum",
-	  "answer": "gestehen, verk�nden"
+	  "answer": "gestehen, verkünden"
 	},
 	{
 	  "question": "orare 1, oro, oravi, oratum",
@@ -193,7 +193,7 @@
 	},
 	{
 	  "question": "cingere 3, cingo, cinxi, cinctum",
-	  "answer": "umg�rten, umgeben"
+	  "answer": "umgürten, umgeben"
 	},
 	{
 	  "question": "legio, legionis f.",
@@ -209,7 +209,7 @@
 	},
 	{
 	  "question": "praestare 1, praesto, praestiti, praestitum",
-	  "answer": "�bertreffen, gew�hren, sich erweisen"
+	  "answer": "übertreffen, gewähren, sich erweisen"
 	},
 	{
 	  "question": "preastat",
@@ -221,11 +221,11 @@
 	},
 	{
 	  "question": "mora, ae f.",
-	  "answer": "Aufschub, Verz�gerung, Pause"
+	  "answer": "Aufschub, Verzögerung, Pause"
 	},
 	{
 	  "question": "pietas, pietatis f.",
-	  "answer": "Fr�mmigkeit, Ehrfurcht"
+	  "answer": "Frömmigkeit, Ehrfurcht"
 	},
 	{
 	  "question": "caelum, i n.",
@@ -233,7 +233,7 @@
 	},
 	{
 	  "question": "magnitudo, magnitudinis f",
-	  "answer": "Gr��e"
+	  "answer": "Größe"
 	},
 	{
 	  "question": "species, speciei f.",
@@ -245,7 +245,7 @@
 	},
 	{
 	  "question": "studere 2, studeo, studui",
-	  "answer": "sich bem�hen, studieren"
+	  "answer": "sich bemühen, studieren"
 	},
 	{
 	  "question": "ascendere 3, ascendo, ascendi, ascensum",
@@ -293,11 +293,11 @@
 	},
 	{
 	  "question": "eripere 3M, eripio, eripui, ereptum",
-	  "answer": "entrei�en, retten, herausrei�en"
+	  "answer": "entreißen, retten, herausreißen"
 	},
 	{
 	  "question": "malum, i n.",
-	  "answer": "�bel, Katastrophe"
+	  "answer": "Übel, Katastrophe"
 	},
 	{
 	  "question": "motus, us m.",
@@ -313,11 +313,11 @@
 	},
 	{
 	  "question": "fortuna, ae f.",
-	  "answer": "Schicksal, Gl�ck, Verm�gen"
+	  "answer": "Schicksal, Glück, Vermögen"
 	},
 	{
 	  "question": "metuere 3, metuo, metui",
-	  "answer": "f�rchten, bef�rchten, sich sorgen um"
+	  "answer": "fürchten, befürchten, sich sorgen um"
 	},
 	{
 	  "question": "somnus, i m.",
@@ -333,7 +333,7 @@
 	},
 	{
 	  "question": "munire 4, munio, muniviv, munitum",
-	  "answer": "befestigen, sichern, sch�tzen"
+	  "answer": "befestigen, sichern, schützen"
 	},
 	{
 	  "question": "frigidus 3",
@@ -353,7 +353,7 @@
 	},
 	{
 	  "question": "similis, simile, similis",
-	  "answer": "�hnlich, gleich"
+	  "answer": "ähnlich, gleich"
 	},
 	{
 	  "question": "incognitus 3",
@@ -361,11 +361,11 @@
 	},
 	{
 	  "question": "cum",
-	  "answer": "als, w�hrend, nachdem, weil, da, obwohl"
+	  "answer": "als, während, nachdem, weil, da, obwohl"
 	},
 	{
 	  "question": "nimium",
-	  "answer": "�berm��ig"
+	  "answer": "übermäßig"
 	},
 	{
 	  "question": "quasi",
@@ -377,7 +377,7 @@
 	},
 	{
 	  "question": "coram",
-	  "answer": "�ffentlich vor"
+	  "answer": "öffentlich vor"
 	},
 	{
 	  "question": "num",
@@ -401,7 +401,7 @@
 	},
 	{
 	  "question": "religio, religionis f.",
-	  "answer": "religi�ses Empfinden, Verehrung"
+	  "answer": "religiöses Empfinden, Verehrung"
 	},
 	{
 	  "question": "contemnere 3, contemno, contempsi, contemptum",
@@ -409,7 +409,7 @@
 	},
 	{
 	  "question": "iocus, i m.",
-	  "answer": "Scherz, Spa�"
+	  "answer": "Scherz, Spaß"
 	},
 	{
 	  "question": "quoniam",
