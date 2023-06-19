@@ -1,470 +1,347 @@
-[
-	{
-	  "question": "militaris m./f., militare n., militaris:",
-	  "answer": "militärisch"
-	},
-	{
-	  "question": "ventus, i m.",
-	  "answer": "Wind"
-	},
-	{
-	  "question": "situs, us m.",
-	  "answer": "Lage, Stellung"
-	},
-	{
-	  "question": "situs",
-	  "answer": "gelegen"
-	},
-	{
-	  "question": "aliqui, aliqua, aliquod",
-	  "answer": "irgendein, irgendeine, irgendein"
-	},
-	{
-	  "question": "sol, solis m.",
-	  "answer": "Sonne"
-	},
-	{
-	  "question": "praetor, praetoris m.",
-	  "answer": "Prätor, Statthalter"
-	},
-	{
-	  "question": "mensis, mensis m.",
-	  "answer": "Monat"
-	},
-	{
-	  "question": "extra",
-	  "answer": "außer, ohne, über-hinaus"
-	},
-	{
-	  "question": "conspicari 1, conspicor, conspicatus sum",
-	  "answer": "erblicken, wahrnehmen"
-	},
-	{
-	  "question": "ver, veris n.",
-	  "answer": "Frühling"
-	},
-	{
-	  "question": "admovere 2, admoveo, admovi, admotum",
-	  "answer": "annähern, heranbringen"
-	},
-	{
-	  "question": "oppidum, i n.",
-	  "answer": "Siedlung"
-	},
-	{
-	  "question": "magistratus, us m.",
-	  "answer": "Amt, Behörde, Beamter"
-	},
-	{
-	  "question": "eques, equitis m.",
-	  "answer": "Reiter, Ritter"
-	},
-	{
-	  "question": "reliquus 3",
-	  "answer": "übrig, restlich"
-	},
-	{
-	  "question": "arbitrari 1, arbitror, arbitratus sum",
-	  "answer": "meinen, glauben, halten für"
-	},
-	{
-	  "question": "sanctus 3",
-	  "answer": "heilig, ehrwürdig"
-	},
-	{
-	  "question": "religiosus 3",
-	  "answer": "religiös, fromm"
-	},
-	{
-	  "question": "aes, aeris n.",
-	  "answer": "Erz, Bronze, Geld"
-	},
-	{
-	  "question": "tollere 3, tollo, sustuli, sublatum",
-	  "answer": "emporheben, wegnehmen"
-	},
-	{
-	  "question": "resistere 3, resisto, restiti",
-	  "answer": "stehen bleiben, wiederstehen"
-	},
-	{
-	  "question": "defendere 3, defendo, defensi, defensum",
-	  "answer": "verteidigen, schätzen, abwehren"
-	},
-	{
-	  "question": "conari 1, conor, conatus sum",
-	  "answer": "wagen, versuchen"
-	},
-	{
-	  "question": "ingredi 3M, ingredior, ingressus sum",
-	  "answer": "betreten, beginnen"
-	},
-	{
-	  "question": "adventus, us m.",
-	  "answer": "Ankunft"
-	},
-	{
-	  "question": "surgere, surgo, surrexi, surrectum",
-	  "answer": "sich erheben, aufsteigen"
-	},
-	{
-	  "question": "concurrere 3, concurro, concurri, concursum",
-	  "answer": "zusammenlaufen, zusammentreffen"
-	},
-	{
-	  "question": "loqui 3, loquor, locutus sum",
-	  "answer": "reden, sprechen"
-	},
-	{
-	  "question": "minor, minus, minoris",
-	  "answer": "weniger, kleiner, jünger"
-	},
-	{
-	  "question": "pessimus 3",
-	  "answer": "der schlechteste"
-	},
-	{
-	  "question": "sacrificare 1, sacrifico, sacrificavi, sacrificatum",
-	  "answer": "opfern"
-	},
-	{
-	  "question": "sicut",
-	  "answer": "so wie, ebenso"
-	},
-	{
-	  "question": "beatus 3",
-	  "answer": "glücklich, heilig"
-	},
-	{
-	  "question": "potestas, potestatis f.",
-	  "answer": "Kraft, Einfluss"
-	},
-	{
-	  "question": "anima, ae f.",
-	  "answer": "Atem, Seele"
-	},
-	{
-	  "question": "adorare 1, adoro, adoravi, adoratum",
-	  "answer": "anbeten, anflehen"
-	},
-	{
-	  "question": "furor, furoris m.",
-	  "answer": "Wut, Wahnsinn"
-	},
-	{
-	  "question": "vertere 3, verto, verti, versum",
-	  "answer": "drehen, wenden, sich verwandeln"
-	},
-	{
-	  "question": "caedere 3, caedo, cecidi, caesum",
-	  "answer": "schlagen, töten"
-	},
-	{
-	  "question": "profiteri 2, profiteor, professus sum",
-	  "answer": "gestehen, verkünden"
-	},
-	{
-	  "question": "orare 1, oro, oravi, oratum",
-	  "answer": "bitten, beten"
-	},
-	{
-	  "question": "circumstare 1, circumsto, circumstavi, circumstatum",
-	  "answer": "herumstehen, umzingeln, belagern"
-	},
-	{
-	  "question": "invadere 3, invado, invasi, invasum",
-	  "answer": "eindringen, befallen"
-	},
-	{
-	  "question": "regio, regionis f.",
-	  "answer": "Gebiet, Landschaft"
-	},
-	{
-	  "question": "profisci 3, proficiscor, profectus sum",
-	  "answer": "aufbrechen, (ab)reisen"
-	},
-	{
-	  "question": "fons, fontis m.",
-	  "answer": "Quelle, Ursprung"
-	},
-	{
-	  "question": "sumere 3, sumo, sumpsi, sumptum",
-	  "answer": "nehmen, annehmen, verbrauchen"
-	},
-	{
-	  "question": "cingere 3, cingo, cinxi, cinctum",
-	  "answer": "umgürten, umgeben"
-	},
-	{
-	  "question": "legio, legionis f.",
-	  "answer": "Legion"
-	},
-	{
-	  "question": "certus 3",
-	  "answer": "gewiss, sicher"
-	},
-	{
-	  "question": "oratio, orationis f.",
-	  "answer": "Rede, Vortrag, Gebet"
-	},
-	{
-	  "question": "praestare 1, praesto, praestiti, praestitum",
-	  "answer": "übertreffen, gewähren, sich erweisen"
-	},
-	{
-	  "question": "preastat",
-	  "answer": "es ist besser"
-	},
-	{
-	  "question": "convocare 1, convoco, convocavi, convocatum",
-	  "answer": "zusammenrufen, versammeln"
-	},
-	{
-	  "question": "mora, ae f.",
-	  "answer": "Aufschub, Verzögerung, Pause"
-	},
-	{
-	  "question": "pietas, pietatis f.",
-	  "answer": "Frömmigkeit, Ehrfurcht"
-	},
-	{
-	  "question": "caelum, i n.",
-	  "answer": "Himmel, Wetter"
-	},
-	{
-	  "question": "magnitudo, magnitudinis f",
-	  "answer": "Größe"
-	},
-	{
-	  "question": "species, speciei f.",
-	  "answer": "Aussehen, Gestalt"
-	},
-	{
-	  "question": "iacere 2, iaceo, iacui",
-	  "answer": "liegen, ruhen, schlafen"
-	},
-	{
-	  "question": "studere 2, studeo, studui",
-	  "answer": "sich bemühen, studieren"
-	},
-	{
-	  "question": "ascendere 3, ascendo, ascendi, ascensum",
-	  "answer": "besteigen, hinaufsteigen"
-	},
-	{
-	  "question": "ut mit Indikativ",
-	  "answer": "wie, sobald"
-	},
-	{
-	  "question": "ut mit Konjunktiv",
-	  "answer": "dass, damit, sodass"
-	},
-	{
-	  "question": "mons, montis m.",
-	  "answer": "Berg"
-	},
-	{
-	  "question": "oriri 4, orior, ortus sum",
-	  "answer": "aufstehen, sichtbar werden, entstehen"
-	},
-	{
-	  "question": "forma, ae f.",
-	  "answer": "Form, Aussehen"
-	},
-	{
-	  "question": "arbor, arboris f.",
-	  "answer": "Baum"
-	},
-	{
-	  "question": "doctus 3",
-	  "answer": "gebildet, gelehrt"
-	},
-	{
-	  "question": "probe",
-	  "answer": "nahe bei, vor Kurzem"
-	},
-	{
-	  "question": "hortari 1, hortor, hortatus sum",
-	  "answer": "ermahnen, aufmuntern, auffordern"
-	},
-	{
-	  "question": "egredi 3M, egredior, egressus sum",
-	  "answer": "herausgehen, hinausgehen"
-	},
-	{
-	  "question": "eripere 3M, eripio, eripui, ereptum",
-	  "answer": "entreißen, retten, herausreißen"
-	},
-	{
-	  "question": "malum, i n.",
-	  "answer": "Übel, Katastrophe"
-	},
-	{
-	  "question": "motus, us m.",
-	  "answer": "Bewegung, Unruhe"
-	},
-	{
-	  "question": "niger, nigera, nigerum",
-	  "answer": "schwarz, dunkel"
-	},
-	{
-	  "question": "paulum",
-	  "answer": "ein wenig"
-	},
-	{
-	  "question": "fortuna, ae f.",
-	  "answer": "Schicksal, Glück, Vermögen"
-	},
-	{
-	  "question": "metuere 3, metuo, metui",
-	  "answer": "fürchten, befürchten, sich sorgen um"
-	},
-	{
-	  "question": "somnus, i m.",
-	  "answer": "Schlaf"
-	},
-	{
-	  "question": "ne",
-	  "answer": "dass nicht, damit nicht"
-	},
-	{
-	  "question": "intra",
-	  "answer": "innerhalb, hinein"
-	},
-	{
-	  "question": "munire 4, munio, muniviv, munitum",
-	  "answer": "befestigen, sichern, schützen"
-	},
-	{
-	  "question": "frigidus 3",
-	  "answer": "kalt, frisch"
-	},
-	{
-	  "question": "poscere 3, posco, poposci",
-	  "answer": "fordern, verlangen"
-	},
-	{
-	  "question": "flamma, ae f.",
-	  "answer": "Flamme, Feuer, Leidenschaft"
-	},
-	{
-	  "question": "integer, ra, rum",
-	  "answer": "unversehrt"
-	},
-	{
-	  "question": "similis, simile, similis",
-	  "answer": "ähnlich, gleich"
-	},
-	{
-	  "question": "incognitus 3",
-	  "answer": "unbekannt"
-	},
-	{
-	  "question": "cum",
-	  "answer": "als, während, nachdem, weil, da, obwohl"
-	},
-	{
-	  "question": "nimium",
-	  "answer": "übermäßig"
-	},
-	{
-	  "question": "quasi",
-	  "answer": "als ob, wie"
-	},
-	{
-	  "question": "aetas, aetatis f.",
-	  "answer": "Lebensalter, Zeitalter"
-	},
-	{
-	  "question": "coram",
-	  "answer": "öffentlich vor"
-	},
-	{
-	  "question": "num",
-	  "answer": "etwa, ob"
-	},
-	{
-	  "question": "dubium, i n.",
-	  "answer": "Zweifel"
-	},
-	{
-	  "question": "mirari 1, miror, miratus sum",
-	  "answer": "sich wundern, bewundern"
-	},
-	{
-	  "question": "digredi 3, digredior, digressus sum",
-	  "answer": "fortgehen, sich trennen"
-	},
-	{
-	  "question": "nauta, ae m.",
-	  "answer": "Seemann, Matrose"
-	},
-	{
-	  "question": "religio, religionis f.",
-	  "answer": "religiöses Empfinden, Verehrung"
-	},
-	{
-	  "question": "contemnere 3, contemno, contempsi, contemptum",
-	  "answer": "verachten"
-	},
-	{
-	  "question": "iocus, i m.",
-	  "answer": "Scherz, Spaß"
-	},
-	{
-	  "question": "quoniam",
-	  "answer": "weil ja, da ja"
-	},
-	{
-	  "question": "vivus 3",
-	  "answer": "lebendig"
-	},
-	{
-	  "question": "saeculum, i n.",
-	  "answer": "Zeitalter, Jahrundert"
-	},
-	{
-	  "question": "eiusmodi",
-	  "answer": "derartig"
-	},
-	{
-	  "question": "potius",
-	  "answer": "eher, lieber, vielmehr"
-	},
-	{
-	  "question": "licentia, ae f.",
-	  "answer": "Freiheit, Erlaubnis"
-	},
-	{
-	  "question": "pontifex, pontificis m.",
-	  "answer": "Priester"
-	},
-	{
-	  "question": "hic",
-	  "answer": "hier"
-	},
-	{
-	  "question": "absens, absentis",
-	  "answer": "abwesend"
-	},
-	{
-	  "question": "anima, ae f.",
-	  "answer": "oder, ob"
-	},
-	{
-	  "question": "nescire 4, nescio, nescivi, nescitum",
-	  "answer": "nicht wissen, nicht verstehen"
-	},
-	{
-	  "question": "innocens, innocentis",
-	  "answer": "unschuldig"
-	},
-	{
-	  "question": "tamquam",
-	  "answer": "gleich wie, als ob"
-	},
-	{
-	  "question": "descendere 3, descendo, descendi, descensum",
-	  "answer": "herabsteigen"
-	}
-  ]
+
+{
+	"answer": "genius",
+	"question": "M. Alcott claimed that talent wasn't -----."
+},
+{
+	"answer": "inspiration",
+	"question": "He is real ----- to me."
+},
+{
+	"answer": "Perspiration",
+	"question": ".----- is regulated by the nervous system."
+},
+{
+	"answer": "light bulb",
+	"question": "The ---- on the ceiling flickered and went out."
+},
+{
+	"answer": "Accordingly",
+	"question": ".-------, we cannot accept that."
+},
+{
+	"answer": "skip school",
+	"question": "Many students who ---- regularly say they find lessons boring."
+},
+{
+	"answer": "deadline",
+	"question": "The ---- is next Monday."
+},
+{
+	"answer": "absorbing",
+	"question": "The project is so ----."
+},
+{
+	"answer": "salary",
+	"question": "The yearly ---- he was offered by our competitior made him leave our company."
+},
+{
+	"answer": "over-achiever",
+	"question": "I am not an ------."
+},
+{
+	"answer": "goes the extra mile",
+	"question": "Bob always ----- when studying for tests."
+},
+{
+	"answer": "exceeded my own expectations",
+	"question": "When I finished the project I ----------."
+},
+{
+	"answer": "chilling out",
+	"question": "I prefer ----- to working out."
+},
+{
+	"answer": "work out",
+	"question": "to -----= to exercise, to practise sports"
+},
+{
+	"answer": "animator",
+	"question": "He always dreamed of working as an ----- in L.A."
+},
+{
+	"answer": "vital",
+	"question": "Patience is ---- if you want to become a doctor."
+},
+{
+	"answer": "trustworthy",
+	"question": "We are looking for a ---- driver."
+},
+{
+	"answer": "reliable",
+	"question": "We are looking for a ---- and kind household help."
+},
+{
+	"answer": "carvers",
+	"question": "Some --- use wood as well as stone for their work."
+},
+{
+	"answer": "globetrotter",
+	"question": "My cousin's a real --------."
+},
+{
+	"answer": "employer",
+	"question": "My ---- is Dr Smith."
+},
+{
+	"answer": "school leaver",
+	"question": "Every ---- should get a job."
+},
+{
+	"answer": "ability to learn",
+	"question": ".------ = to be able to learn. (what an amazing explanation)"
+},
+{
+	"answer": "Teamwork",
+	"question": ".---- is becoming more and more important."
+},
+{
+	"answer": "Self-management",
+	"question": ".------ is an important skill in the workplace."
+},
+{
+	"answer": "initiative",
+	"question": "It was on his --- that they started the project."
+},
+{
+	"answer": "enterprise",
+	"question": "Google has turned into a multinational -----."
+},
+{
+	"answer": "employable",
+	"question": "How ---- are you?"
+},
+{
+	"answer": "Employees",
+	"question": ".----- of the firm about to be closed went on strike."
+},
+{
+	"answer": "provide information",
+	"question": "If you'd like me to invest in your project you need to ----- more ---- first."
+},
+{
+	"answer": "carry out instructions",
+	"question": "Don't wait to be told to ------. Show some initiative!"
+},
+{
+	"answer": "standing around",
+	"question": "Don't let the boss see you ---- doing nothing."
+},
+{
+	"answer": "be told what to do",
+	"question": "She always needs to --------. I wish she would show more initiative."
+},
+{
+	"answer": "adjust work procedures",
+	"question": "In your new job you will have to ------."
+},
+{
+	"answer": "take action",
+	"question": "You will also have to ------."
+},
+{
+	"answer": "According to",
+	"question": ".----- the rules you'll have to wear a suit and tie."
+},
+{
+	"answer": "time frame",
+	"question": "It is important that you stay within the ----."
+},
+{
+	"answer": "ensure",
+	"question": "Please ----- that you are on time."
+},
+{
+	"answer": "efficiently",
+	"question": "Doing things ----- is doing things right."
+},
+{
+	"answer": "effectively",
+	"question": "Doing things ----- is doing the right things."
+},
+{
+	"answer": "rely on",
+	"question": "You can always ---- me."
+},
+{
+	"answer": "Updating one's knowledge",
+	"question": ".----- is essential in every life phase."
+},
+{
+	"answer": "Adapting to changes",
+	"question": ".------ gets harder when you get older."
+},
+{
+	"answer": "is experienced in",
+	"question": "She ----- leading projects."
+},
+{
+	"answer": "am skilled at",
+	"question": "I ------ new technologies."
+},
+{
+	"answer": "gain an understanding of",
+	"question": "He tries to ----- the complex process."
+},
+{
+	"answer": "develop my strengths",
+	"question": "I try to ---- in computing."
+},
+{
+	"answer": "widens my horizon",
+	"question": "I find that travelling really --------."
+},
+{
+	"answer": "fetch",
+	"question": "One moment, I'll --- him."
+},
+{
+	"answer": "hang on a moment",
+	"question": "Please, ------."
+},
+{
+	"answer": "extension",
+	"question": "Ms Herbert's ------ is 405."
+},
+{
+	"answer": "put through",
+	"question": "I'll --- you --- to Mr Kline"
+},
+{
+	"answer": "hold the line",
+	"question": "Could you please ------?"
+},
+{
+	"answer": "is not available",
+	"question": "Sorry, she -------."
+},
+{
+	"answer": "engaged",
+	"question": "Sorry, the line is -----."
+},
+{
+	"answer": "enquire about",
+	"question": "Please ----- the departure details."
+},
+{
+	"answer": "ring back later",
+	"question": "Sure, no problem. I will -------."
+},
+{
+	"answer": "convenient",
+	"question": "What time would be ---------?"
+},
+{
+	"answer": "reception",
+	"question": "The --- in this valley is really bad."
+},
+{
+	"answer": "was cut off",
+	"question": "Sorry, the line -------."
+},
+{
+	"answer": "speak up a bit",
+	"question": "Excuse me, could you -------?"
+},
+{
+	"answer": "bear with for a moment",
+	"question": "I would ask you to ------ me --------."
+},
+{
+	"answer": "fire away",
+	"question": "OK, please ------."
+},
+{
+	"answer": "VAT",
+	"question": "How much ---- do you have to pay in the US?"
+},
+{
+	"answer": "invoice",
+	"question": "Please send the ---- back to us."
+},
+{
+	"answer": "accounts department",
+	"question": "He works in the ------."
+},
+{
+	"answer": "minutes",
+	"question": "Who is writing the ---- today?"
+},
+{
+	"answer": "private purposes",
+	"question": "School computers must not be used for -----."
+},
+{
+	"answer": "meeting scheduled",
+	"question": "The ---- is --- for Wednesday."
+},
+{
+	"answer": "postponed",
+	"question": "Our boss was late, so the meeting had to be -----."
+},
+{
+	"answer": "connectives",
+	"question": "However, but, etc. are ------."
+},
+{
+	"answer": "monotonous",
+	"question": "His voice is -----."
+},
+{
+	"answer": "address the audience",
+	"question": "You should ---- directly and not talk to yourself."
+},
+{
+	"answer": "Involve",
+	"question": ".----- people from the audience!"
+},
+{
+	"answer": "corporate culture",
+	"question": "Their ---- is a disaster."
+},
+{
+	"answer": "enhance",
+	"question": "You should ---- your training schemes further."
+},
+{
+	"answer": "core values",
+	"question": "The ---- of our company are summarised in that folder."
+},
+{
+	"answer": "hierarchy",
+	"question": "There's no ---- among us students, I guess."
+},
+{
+	"answer": "collaborative environment",
+	"question": "Our aim is to create a rich -------."
+},
+{
+	"answer": "integrity",
+	"question": "One's personal ---- should never be violated."
+},
+{
+	"answer": "accesible",
+	"answer": "accessible",
+	"question": "The university has made ist library more ----."
+},
+{
+	"answer": "is related to",
+	"question": "This problem --- closely ----- one we already had."
+},
+{
+	"answer": "hires",
+	"question": "This company ----- around 20 new employees a year."
+},
+{
+	"answer": "traits",
+	"question": "His character ---- are very positive."
+},
+{
+	"answer": "flexible",
+	"question": "Today workers have to be ---- and adaptable."
+},
+{
+	"answer": "adaptable",
+	"question": "His team is highly ------."
+},
+{
