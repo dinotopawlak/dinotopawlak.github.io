@@ -124,3 +124,14 @@ input {
   background-size: 100%;
   transition: background 0s;
 }
+
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+}
