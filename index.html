@@ -1,29 +1,42 @@
 <!DOCTYPE html>
-<html style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+<html>
 
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-	<p id="myQuestion"></p>
+  <div id="menu"> 
+    <button class="round-btn ripple" onclick="reset()"><img class="icon" src="/icons/reset.svg"/></button>
+    <button class="round-btn ripple" onclick="help()"><img class="icon" src="/icons/lightbulb.svg"/></button>
+    <button class="round-btn ripple" style="background-color: #010409" onclick="window.location = 'https://github.com/dinotopawlak/dinotopawlak.github.io'">
+        <img class="icon" src="/icons/github.svg"/>
+    </button>
+  </div>
+  <div id="progress_indicator"></div>
+  <div id="container">
+    <p id="myQuestion"></p>
 
-	<!--return false to prevent reloading-->
-	<form onsubmit="getInputValue(); return false">
-		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
-		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
-		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
-		
-		<br>
-	</form>
+    <!--return false to prevent reloading-->
+    <form onsubmit="getInputValue(); return false" id="form">
+      <input type="text" id="Myinput" autocomplete="off" placeholder="Hier das Wort  schreiben" />
+      <button type="submit" id="Antwortbutton" class="btn ripple">Submit</button>
+      <br>
+    </form>
+    <!-- <br> -->
+    <!-- <button onclick="reset()" class="btn waves-effect">Reset Progress</button> -->
+    <!-- <br> -->
+    <!-- <button onclick="help()" class="btn">Solution</button> -->
+    <div style="color: crimson;" id="error" class="info"></div>
+    <div id="help" class="info"></div>
+  </div>
 
-	<!--<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
-	<br>
-	<span id="progress_indicator"></span>
-	<br>
-	<button style="height:40px; width:900px" onclick="reset()">Reset Progress</button>
-	<br>
-	<button style="height:40px; width:900px" onclick="help()">Solution</button>
  	<script>
 
 		const storedTasks = { ...localStorage };
@@ -129,13 +142,10 @@
 
 				}
 			}
-			document.getElementById("help").innerHTML = solution
+      document.getElementById("help").innerHTML = `Help: ${solution}`
 		}
 
 	</script>
-
-	<div style="font-size: 70px; color: crimson;" id="error"></div>
-	<div style="font-size: 60px; color:black;" id="help"></div>
 
 </body>
 

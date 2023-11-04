@@ -1,0 +1,126 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+#myQuestion {
+  font-size: 20px;
+  text-align: center;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.12);
+  border-radius: 10px;
+  width: 600px;
+  height: 200px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn {
+  background-color: #004c98;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-size: 15px;
+  outline: 0;
+  text-align: center;
+  letter-spacing: .5px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.round-btn {
+  height: 40px;
+  line-height: 40px;  
+  width: 40px;  
+  font-size: 2em;
+  line-height: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #004c98;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+	background-color: transparent;
+	border: none;
+  color: #fff;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	outline: none;
+	height: 2.5rem;
+	width: 100%;
+	font-size: 15px;
+	margin: 0 0 8px 0;
+	padding: 0;
+	box-sizing: content-box;
+	transition: box-shadow .3s, border .3s;
+  overflow: invisible;
+}
+
+#progress_indicator {
+  position: absolute;
+  font-size: 30px;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+.icon {
+  filter: invert(100%);
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
