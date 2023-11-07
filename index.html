@@ -140,8 +140,10 @@
 
 
 		function reset() {
-			localStorage.clear();
-			window.location.reload();
+      if (window.confirm("Willst du wirklich den Fortschritt zurücksetzen?")) {
+        localStorage.clear();
+        window.location.reload();
+      }
 		}
 
 		function help() {
