@@ -226,7 +226,7 @@ input {
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
     box-shadow: none;
     margin: 0;
   }
