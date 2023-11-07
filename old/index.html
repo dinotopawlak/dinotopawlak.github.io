@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+
+<head>
+	<meta charset="UTF-8">
+</head>
+
+<body>
+	<p id="myQuestion"></p>
+
+	<!--return false to prevent reloading-->
+	<form onsubmit="getInputValue(); return false">
+		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
+		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
+		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
+		
+		<br>
+	</form>
+
+	<!--<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
+	<br>
+	<span id="progress_indicator"></span>
+	<br>
+	<button style="height:40px; width:900px" onclick="reset()">Reset Progress</button>
+	<br>
+	<button style="height:40px; width:900px" onclick="help()">Solution</button>
+ 	<script>
+
+		const storedTasks = { ...localStorage };
+		let progress_locked = false;
+		let tasks = []
+		let possible_tasks = []
+		
+		
+		const myInput = document.getElementById("Myinput");
+		const progress_indicator = document.getElementById("progress_indicator");
+		let thisTask = {};
+		let countSolution = 0
+
+		
+		document.addEventListener("keydown", (event) => {
+			if (event.key == "ArrowDown") {
+				help();
+			}
+
+		})
+
+		load_questionsanswers();
+
+
+		function load_questionsanswers() {
+			function reqListener() {
+				tasks = JSON.parse(this.responseText);
+				console.log(tasks.length);
+				possible_tasks = tasks.filter((task) => {
+					let storedItem = storedTasks[task.question];
+					if (storedItem != undefined) {
+						if (storedItem != false) {
+							return false
+						}
+					}
+					return true
+
+				})
+				
+				if (possible_tasks.length == 0) {
+					myInput.disabled = true;
+					alert("Alles gelernt, wenn nochmal, dann auf Reset drücken");
+
+					return;
+				} 
+				thisTask = possible_tasks[Math.floor(Math.random() * possible_tasks.length)]
+				document.getElementById("myQuestion").innerHTML = thisTask.question
+				progress_indicator.innerHTML = `Progress: ${tasks.length - possible_tasks.length}/${tasks.length}`;
+			}
+
+			const req = new XMLHttpRequest();
+			req.addEventListener("load", reqListener);
+			req.open("GET", "/tasks.json");
+			req.send();
+		}
+		
+
+		function save_progress(question, is_done) {
+			if (progress_locked) {
+				return;
+			}
+			localStorage.setItem(question, is_done)
+		}
+
+		function getInputValue() {
+			if (myInput.value.toLowerCase() === thisTask.answer.toLowerCase()) {
+				if (countSolution != 0) {
+					progress_locked = true;
+				}
+
+				save_progress(thisTask.question, true)
+				alert("Muy bien :)");
+				window.location.reload()
+			} else {
+				progress_locked = true;
+				save_progress(thisTask.question, false)
+				document.getElementById("error").innerHTML = "Esta mal!!! Inténtalo otra vez";
+			}
+		}
+
+
+
+		function reset() {
+			localStorage.clear();
+			window.location.reload();
+		}
+
+		myInput.select();
+		function help() {
+			//window.alert(thisTask.answer)
+			countSolution = countSolution + 1
+			let solution = ""
+			const stringlength = thisTask.answer.length
+			if (countSolution > 6) {
+				solution = thisTask.answer
+			} else {
+				for (let i = 0; i < stringlength; i++) {
+					if (i < countSolution) {
+						solution = solution + thisTask.answer.charAt(i)
+					} else {
+						solution = solution + "*"
+					}
+
+				}
+			}
+			document.getElementById("help").innerHTML = solution
+		}
+
+	</script>
+
+	<div style="font-size: 70px; color: crimson;" id="error"></div>
+	<div style="font-size: 60px; color:black;" id="help"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #121212;
+  color: white;
+}
+
+#myQuestion {
+  font-size: 20px;
+  text-align: center;
+}
+
+.info {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#container {
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: 600px;
+  height: 230px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  padding: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+#menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.btn {
+  background-color: #004c98;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  font-size: 15px;
+  outline: 0;
+  text-align: center;
+  letter-spacing: .5px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
+}
+
+.round-btn {
+  height: 40px;
+  line-height: 40px;  
+  width: 40px;  
+  font-size: 2em;
+  line-height: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  background-color: #004c98;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+	background-color: transparent;
+	border: none;
+  color: #fff;
+	border-bottom: 1px solid #fff;
+	border-radius: 0;
+	outline: none;
+	height: 2.5rem;
+	width: 100%;
+	font-size: 15px;
+	margin: 0 0 8px 0;
+	padding: 0;
+	box-sizing: content-box;
+	transition: box-shadow .3s, border .3s;
+  overflow: invisible;
+}
+
+#progress_indicator {
+  position: absolute;
+  font-size: 30px;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  text-align: center;
+}
+
+.icon {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  background-color: #121212;
+  padding: 0;
+  padding-bottom: 10px;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border-radius: 5px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: #004c98;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: rgba(0,0,0,0.30);
+  color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+#word-wrapper {
+  font-weight: 700;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#pronounciation {
+  margin-top: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-bottom: 55px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .modal-content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    box-shadow: none;
+    margin: 0;
+  }
+}

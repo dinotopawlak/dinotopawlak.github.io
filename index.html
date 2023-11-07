@@ -1,29 +1,55 @@
 <!DOCTYPE html>
-<html style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 30px;">
+<html>
 
 <head>
 	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<p id="myQuestion"></p>
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3 id="modal-header-title"></h3>
+      </div>
+      <div class="modal-body">
+        <h2 id="word-wrapper"><span id="word"></span> <img class="icon" style="display: none" src="/icons/play.svg" id="word-audio"></h5>
+        <h4 id="pronounciation"></h6>
+        <div id="definitions">
+        </div>
+        <br>
+        <div>API Provided by <a href="https://github.com/meetDeveloper/freeDictionaryAPI">Free Dictionary API</a></div>
+      </div>
+    </div>
+  </div>
 
-	<!--return false to prevent reloading-->
-	<form onsubmit="getInputValue(); return false">
-		<label style="font-size:20px" for="MyInput">Hier das gewünschte Wort schreiben:&nbsp;</label>
-		<input type="text" style="height:23px;font-size:20px" id="Myinput" autocomplete="off" />
-		<button type="submit" style="height:40px;font-size:20px" id="Antwortbutton">Submit</button>
-		
-		<br>
-	</form>
+  <div id="menu"> 
+    <button class="round-btn ripple" onclick="reset()"><img class="icon" src="/icons/reset.svg"/></button>
+    <button class="round-btn ripple" onclick="help()"><img class="icon" src="/icons/lightbulb.svg"/></button>
+    <button class="round-btn ripple" onclick="dictionary()"><img class="icon" src="/icons/dictionary.svg"/></button>
+    <button class="round-btn ripple" style="background-color: #010409" onclick="window.location = 'https://github.com/dinotopawlak/dinotopawlak.github.io'">
+        <img class="icon" src="/icons/github.svg"/>
+    </button>
+  </div>
+  <div id="progress_indicator"></div>
+  <div id="container">
+    <p id="myQuestion"></p>
 
-	<!--<button style="height:30px" onclick=alert(thisTask.tip)>Hier klicken für Tipps</button>-->
-	<br>
-	<span id="progress_indicator"></span>
-	<br>
-	<button style="height:40px; width:900px" onclick="reset()">Reset Progress</button>
-	<br>
-	<button style="height:40px; width:900px" onclick="help()">Solution</button>
+    <!--return false to prevent reloading-->
+    <form onsubmit="getInputValue(); return false" id="form">
+      <input type="text" id="Myinput" autocomplete="off" placeholder="Hier das Wort  schreiben" />
+      <button type="submit" id="Antwortbutton" class="btn ripple">Submit</button>
+      <br>
+    </form>
+    <div style="color: crimson;" id="error" class="info"></div>
+    <div id="help" class="info"></div>
+  </div>
+
  	<script>
 
 		const storedTasks = { ...localStorage };
@@ -31,12 +57,13 @@
 		let tasks = []
 		let possible_tasks = []
 		
-		
 		const myInput = document.getElementById("Myinput");
 		const progress_indicator = document.getElementById("progress_indicator");
+    const modal = document.getElementById("modal")
 		let thisTask = {};
 		let countSolution = 0
 
+    var wordAlreadyLookedUp = false;
 		
 		document.addEventListener("keydown", (event) => {
 			if (event.key == "ArrowDown") {
@@ -45,8 +72,14 @@
 
 		})
 
-		load_questionsanswers();
+    window.onclick = (ev) => {
+      if (ev.target == modal) {
+        closeModal(); 
+      }
+    }
 
+		load_questionsanswers();
+		myInput.select();
 
 		function load_questionsanswers() {
 			function reqListener() {
@@ -107,13 +140,13 @@
 
 
 		function reset() {
-			localStorage.clear();
-			window.location.reload();
+      if (window.confirm("Willst du wirklich den Fortschritt zurücksetzen?")) {
+        localStorage.clear();
+        window.location.reload();
+      }
 		}
 
-		myInput.select();
 		function help() {
-			//window.alert(thisTask.answer)
 			countSolution = countSolution + 1
 			let solution = ""
 			const stringlength = thisTask.answer.length
@@ -129,13 +162,113 @@
 
 				}
 			}
-			document.getElementById("help").innerHTML = solution
+      document.getElementById("help").innerHTML = `Help: ${solution}`
 		}
 
-	</script>
+    async function dictionary(override) {
+      if (wordAlreadyLookedUp) {
+        openModal();
+        return;
+      }
 
-	<div style="font-size: 70px; color: crimson;" id="error"></div>
-	<div style="font-size: 60px; color:black;" id="help"></div>
+      let word = override ? override : thisTask.answer;
+
+      let wordElem = document.getElementById("word");
+      let pronounciationElem = document.getElementById("pronounciation");
+      let wordAudioElem = document.getElementById("word-audio");
+      let defintionsElem = document.getElementById("definitions");
+      let headerTitle = document.getElementById("modal-header-title");
+
+      let res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (!res.ok) {
+        headerTitle.innerHTML = "API Error";
+        defintionsElem.innerHTML = `
+          <h3>The API returned ${res.status} for word/phrase "${word}", this is an error.</h3>
+          <form onsubmit="dictionary(document.getElementById('tryagain-input').value); return false">
+            <input placeholder="Try different word" autocomplete="off" id="tryagain-input">
+            <button type="submit" class="btn ripple">Submit</button>
+          </form>
+        `
+        openModal();
+        return;
+      }
+
+      let json = await res.json();
+      json = json[0]
+
+
+      headerTitle.innerHTML = `Definitions of ${word}`;
+    
+      wordElem.innerHTML = json.word;
+      let phonetic = json.phonetic ? json.phonetic : "";
+
+      if (!phonetic) {
+        for (const ph of json.phonetics) {
+          if (ph.text) {
+            phonetic = ph.text;
+            break;
+          }
+        }
+      }
+      pronounciationElem.innerHTML = phonetic;
+
+      let audioUrl = ""
+      for (const ph of json.phonetics){
+        if (ph.audio) {
+          audioUrl = ph.audio;
+          break;
+        }
+      }
+
+      if (audioUrl.length > 0) {
+        wordAudioElem.style.display = "block";
+        wordAudioElem.onclick = () => {
+          let audio = new Audio(audioUrl);
+          audio.play();
+        }
+      } else {
+        wordAudioElem.style.display = "none";
+      }
+      
+      let definitions = []
+
+      json.meanings.forEach((meaning) => {
+        let details = document.createElement("details");
+        let summary = document.createElement("summary");
+        let ol = document.createElement("ol");
+        
+        summary.innerHTML = meaning.partOfSpeech;
+
+        meaning.definitions.forEach((def) => {
+          let li = document.createElement("li");
+          li.innerHTML = def.definition;
+          ol.append(li);
+        })
+        
+        details.append(summary);
+        details.append(ol);
+        
+        definitions.push(details)
+      })
+      
+      if (definitions.length > 0) {
+        definitions[0].setAttribute('open',true);
+        defintionsElem.replaceChildren(...definitions);
+      }
+
+      wordAlreadyLookedUp = true;
+      openModal();
+    }
+
+    function openModal() {
+      modal.style.display = "block";
+    }
+
+    function closeModal() {
+      modal.style.display = "none";
+    }
+
+	</script>
 
 </body>
 
